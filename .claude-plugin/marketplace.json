@@ -1,10 +1,21 @@
 {
+  "name": "superpowers-symfony",
+  "owner": {
+    "name": "MakFly"
+  },
+  "metadata": {
+    "description": "A Claude Code plugin providing Symfony-specific guidance, skills, and workflows.",
+    "version": "0.1.0"
+  },
   "plugins": [
     {
-      "id": "superpowers-symfony",
-      "repository": "https://github.com/MakFly/superpowers-symfony.git",
+      "name": "superpowers-symfony",
+      "source": "./",
+      "repository": "https://github.com/MakFly/superpowers-symfony",
       "description": "Symfony-specific Claude Code workflows",
-      "version": "0.1.0"
+      "version": "0.1.0",
+      "skills": "./skills/",
+      "commands": "./commands/"
     }
   ]
 }
