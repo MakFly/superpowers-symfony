@@ -3,9 +3,6 @@ name: symfony:bootstrap-check
 description: Verify Symfony project configuration including .env, services.yaml, doctrine settings, and framework requirements
 allowed-tools:
   - Read
-  - Write
-  - Edit
-  - Bash
   - Glob
   - Grep
 ---
