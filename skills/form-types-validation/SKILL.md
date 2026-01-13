@@ -1,6 +1,6 @@
 ---
 name: symfony:form-types-validation
-description: Build Symfony forms with custom Form Types, validation constraints, data transformers, and proper error handling
+description: Use when build Symfony forms with custom Form Types, validation constraints, data transformers, and proper error handling
 allowed-tools:
   - Read
   - Write

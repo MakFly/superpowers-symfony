@@ -1,6 +1,6 @@
 ---
 name: symfony:doctrine-migrations
-description: Create and manage Doctrine migrations for schema versioning; handle migration dependencies, rollbacks, and production deployment
+description: Use when create and manage Doctrine migrations for schema versioning; handle migration dependencies, rollbacks, and production deployment
 allowed-tools:
   - Read
   - Write

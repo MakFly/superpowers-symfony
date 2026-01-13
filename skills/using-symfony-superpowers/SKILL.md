@@ -1,6 +1,6 @@
 ---
 name: symfony:using-symfony-superpowers
-description: Entry point for Symfony Superpowers - lightweight workflow guidance and command map.
+description: Use when entry point for Symfony Superpowers - lightweight workflow guidance and command map.
 allowed-tools:
   - Read
   - Glob

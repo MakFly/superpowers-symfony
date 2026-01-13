@@ -1,6 +1,6 @@
 ---
 name: symfony:api-platform-tests
-description: Test API Platform resources with ApiTestCase, test collections, items, filters, and authentication
+description: Use when test API Platform resources with ApiTestCase, test collections, items, filters, and authentication
 allowed-tools:
   - Read
   - Write

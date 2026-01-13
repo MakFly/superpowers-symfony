@@ -1,6 +1,6 @@
 ---
 name: symfony:tdd-with-pest
-description: Apply RED-GREEN-REFACTOR with Pest PHP for Symfony; use Foundry factories, functional tests with WebTestCase, verify failures before implementation
+description: Use when apply RED-GREEN-REFACTOR with Pest PHP for Symfony; use Foundry factories, functional tests with WebTestCase, verify failures before implementation
 allowed-tools:
   - Read
   - Write

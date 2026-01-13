@@ -1,6 +1,6 @@
 ---
 name: symfony:cqrs-and-handlers
-description: Implement CQRS pattern in Symfony with separate Command and Query handlers using Messenger component
+description: Use when implement CQRS pattern in Symfony with separate Command and Query handlers using Messenger component
 allowed-tools:
   - Read
   - Write

@@ -1,6 +1,6 @@
 ---
 name: symfony:symfony-scheduler
-description: Schedule recurring tasks with Symfony Scheduler component (7.1+); define schedules, triggers, and integrate with Messenger
+description: Use when schedule recurring tasks with Symfony Scheduler component (7.1+); define schedules, triggers, and integrate with Messenger
 allowed-tools:
   - Read
   - Write

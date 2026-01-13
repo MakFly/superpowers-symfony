@@ -1,11 +1,8 @@
 ---
 name: symfony:effective-context
-description: Provide effective context to Claude for Symfony development with relevant files, patterns, and constraints
+description: Use when provide effective context to Claude for Symfony development with relevant files, patterns, and constraints
 allowed-tools:
   - Read
-  - Write
-  - Edit
-  - Bash
   - Glob
   - Grep
 ---

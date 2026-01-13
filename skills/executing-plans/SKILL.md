@@ -1,11 +1,8 @@
 ---
 name: symfony:executing-plans
-description: Methodically execute implementation plans with TDD approach, incremental commits, and continuous validation
+description: Use when methodically execute implementation plans with TDD approach, incremental commits, and continuous validation
 allowed-tools:
   - Read
-  - Write
-  - Edit
-  - Bash
   - Glob
   - Grep
 ---

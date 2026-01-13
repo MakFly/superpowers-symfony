@@ -1,6 +1,6 @@
 ---
 name: symfony:api-platform-dto-resources
-description: Create API Platform resources using pure DTOs without Doctrine entities, enabling clean API design decoupled from database schema
+description: Use when create API Platform resources using pure DTOs without Doctrine entities, enabling clean API design decoupled from database schema
 allowed-tools:
   - Read
   - Write

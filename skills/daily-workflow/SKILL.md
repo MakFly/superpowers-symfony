@@ -1,11 +1,8 @@
 ---
 name: symfony:daily-workflow
-description: Daily development workflow for Symfony projects including common tasks, debugging, and productivity tips
+description: Use when daily development workflow for Symfony projects including common tasks, debugging, and productivity tips
 allowed-tools:
   - Read
-  - Write
-  - Edit
-  - Bash
   - Glob
   - Grep
 ---

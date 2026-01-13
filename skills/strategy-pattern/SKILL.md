@@ -1,6 +1,6 @@
 ---
 name: symfony:strategy-pattern
-description: Implement the Strategy pattern with Symfony's tagged services for runtime algorithm selection and extensibility
+description: Use when implement the Strategy pattern with Symfony's tagged services for runtime algorithm selection and extensibility
 allowed-tools:
   - Read
   - Write

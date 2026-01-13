@@ -1,6 +1,6 @@
 ---
 name: symfony:value-objects-and-dtos
-description: Design Value Objects for domain concepts and DTOs for data transfer with proper immutability and validation
+description: Use when design Value Objects for domain concepts and DTOs for data transfer with proper immutability and validation
 allowed-tools:
   - Read
   - Write

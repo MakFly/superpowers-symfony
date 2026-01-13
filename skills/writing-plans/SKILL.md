@@ -1,6 +1,6 @@
 ---
 name: symfony:writing-plans
-description: Create structured implementation plans for Symfony features with clear steps, dependencies, and acceptance criteria
+description: Use when create structured implementation plans for Symfony features with clear steps, dependencies, and acceptance criteria
 allowed-tools:
   - Read
   - Glob

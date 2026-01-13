@@ -1,6 +1,6 @@
 ---
 name: symfony:ports-and-adapters
-description: Implement Hexagonal Architecture (Ports and Adapters) in Symfony; separate domain logic from infrastructure with clear boundaries
+description: Use when implement Hexagonal Architecture (Ports and Adapters) in Symfony; separate domain logic from infrastructure with clear boundaries
 allowed-tools:
   - Read
   - Write

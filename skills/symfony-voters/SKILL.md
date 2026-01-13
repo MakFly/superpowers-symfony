@@ -1,6 +1,6 @@
 ---
 name: symfony:symfony-voters
-description: Implement granular authorization with Symfony Voters; decouple permission logic from controllers; test authorization separately from business logic
+description: Use when implement granular authorization with Symfony Voters; decouple permission logic from controllers; test authorization separately from business logic
 allowed-tools:
   - Read
   - Write

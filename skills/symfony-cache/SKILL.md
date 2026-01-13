@@ -1,6 +1,6 @@
 ---
 name: symfony:symfony-cache
-description: Implement caching with Symfony Cache component; configure pools, use cache tags for invalidation, and optimize performance
+description: Use when implement caching with Symfony Cache component; configure pools, use cache tags for invalidation, and optimize performance
 allowed-tools:
   - Read
   - Write

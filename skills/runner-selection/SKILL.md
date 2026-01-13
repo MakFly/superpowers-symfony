@@ -1,6 +1,6 @@
 ---
 name: symfony:runner-selection
-description: Select and configure the appropriate command runner based on Docker Compose standard, Symfony Docker (FrankenPHP), or host environment
+description: Use when select and configure the appropriate command runner based on Docker Compose standard, Symfony Docker (FrankenPHP), or host environment
 allowed-tools:
   - Read
   - Glob

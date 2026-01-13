@@ -1,6 +1,6 @@
 ---
 name: symfony:brainstorming
-description: Structured brainstorming techniques for Symfony projects - explore requirements, identify components, and plan architecture collaboratively
+description: Use when structured brainstorming techniques for Symfony projects - explore requirements, identify components, and plan architecture collaboratively
 allowed-tools:
   - Read
   - Glob

@@ -1,6 +1,6 @@
 ---
 name: symfony:rate-limiting
-description: Implement rate limiting with Symfony RateLimiter component; configure sliding window, token bucket, and fixed window algorithms
+description: Use when implement rate limiting with Symfony RateLimiter component; configure sliding window, token bucket, and fixed window algorithms
 allowed-tools:
   - Read
   - Write

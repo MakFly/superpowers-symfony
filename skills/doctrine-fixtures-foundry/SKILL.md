@@ -1,6 +1,6 @@
 ---
 name: symfony:doctrine-fixtures-foundry
-description: Create test data with Foundry factories; define states, sequences, and relationships for realistic fixtures
+description: Use when create test data with Foundry factories; define states, sequences, and relationships for realistic fixtures
 allowed-tools:
   - Read
   - Write

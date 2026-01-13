@@ -1,6 +1,6 @@
 ---
 name: symfony:controller-cleanup
-description: Refactor fat controllers into lean controllers by extracting business logic to services, handlers, and dedicated classes
+description: Use when refactor fat controllers into lean controllers by extracting business logic to services, handlers, and dedicated classes
 allowed-tools:
   - Read
   - Write

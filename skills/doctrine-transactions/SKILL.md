@@ -1,6 +1,6 @@
 ---
 name: symfony:doctrine-transactions
-description: Handle database transactions with Doctrine UnitOfWork; implement optimistic locking, flush strategies, and transaction boundaries
+description: Use when handle database transactions with Doctrine UnitOfWork; implement optimistic locking, flush strategies, and transaction boundaries
 allowed-tools:
   - Read
   - Write

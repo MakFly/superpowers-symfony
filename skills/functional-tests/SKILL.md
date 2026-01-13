@@ -1,6 +1,6 @@
 ---
 name: symfony:functional-tests
-description: Write functional tests for Symfony controllers and HTTP endpoints using WebTestCase, BrowserKit, and test clients
+description: Use when write functional tests for Symfony controllers and HTTP endpoints using WebTestCase, BrowserKit, and test clients
 allowed-tools:
   - Read
   - Write

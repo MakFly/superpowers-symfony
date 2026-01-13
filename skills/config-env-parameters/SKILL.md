@@ -1,6 +1,6 @@
 ---
 name: symfony:config-env-parameters
-description: Manage Symfony configuration with .env files, parameters, secrets, and environment-specific settings
+description: Use when manage Symfony configuration with .env files, parameters, secrets, and environment-specific settings
 allowed-tools:
   - Read
   - Write
