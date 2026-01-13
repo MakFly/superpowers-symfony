@@ -1,6 +1,6 @@
 ---
 name: symfony:doctrine-fixtures-foundry
-description: Use when create test data with Foundry factories; define states, sequences, and relationships for realistic fixtures
+description: Use when symfony doctrine fixtures foundry
 allowed-tools:
   - Read
   - Write
@@ -10,23 +10,22 @@ allowed-tools:
   - Grep
 ---
 
-# symfony:doctrine-fixtures-foundry (Compact)
+# symfony:doctrine-fixtures-foundry (Micro)
 
 ## Use when
-- Create test data with Foundry factories; define states, sequences, and relationships for realistic fixtures
+- Use when symfony doctrine fixtures foundry
 
-## Topics covered
-- Installation
-- Creating Factories
-- Using Factories
-- Factory Features
-- Test Database Reset
-- Factory Best Practices
+## Tags
+- doctrine
 
-## Operating rules
-1. Keep changes minimal and focused.
-2. Ask before running servers, builds, or tests.
-3. Use project conventions and existing structure.
+## Do
+- Keep changes minimal and focused
+- Ask before running servers/builds/tests
+- Follow existing project conventions
+
+## Avoid
+- Unnecessary context expansion
+- Changing unrelated files
 
 ## References
-See `reference.md` for full details and examples.
+- `reference.md` for full details

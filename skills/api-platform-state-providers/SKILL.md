@@ -1,6 +1,6 @@
 ---
 name: symfony:api-platform-state-providers
-description: Use when master API Platform State Providers and Processors to decouple data retrieval and persistence from entities, enabling clean architecture and custom data sources
+description: Use when symfony api platform state providers
 allowed-tools:
   - Read
   - Write
@@ -10,23 +10,22 @@ allowed-tools:
   - Grep
 ---
 
-# symfony:api-platform-state-providers (Compact)
+# symfony:api-platform-state-providers (Micro)
 
 ## Use when
-- Master API Platform State Providers and Processors to decouple data retrieval and persistence from entities, enabling clean architecture and custom data sources
+- Use when symfony api platform state providers
 
-## Topics covered
-- Concepts
-- State Providers
-- State Processors
-- Complete Resource Configuration
-- Best Practices
-- Testing
+## Tags
+- api-platform
 
-## Operating rules
-1. Keep changes minimal and focused.
-2. Ask before running servers, builds, or tests.
-3. Use project conventions and existing structure.
+## Do
+- Keep changes minimal and focused
+- Ask before running servers/builds/tests
+- Follow existing project conventions
+
+## Avoid
+- Unnecessary context expansion
+- Changing unrelated files
 
 ## References
-See `reference.md` for full details and examples.
+- `reference.md` for full details

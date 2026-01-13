@@ -1,6 +1,6 @@
 ---
 name: symfony:api-platform-dto-resources
-description: Use when create API Platform resources using pure DTOs without Doctrine entities, enabling clean API design decoupled from database schema
+description: Use when symfony api platform dto resources
 allowed-tools:
   - Read
   - Write
@@ -10,25 +10,22 @@ allowed-tools:
   - Grep
 ---
 
-# symfony:api-platform-dto-resources (Compact)
+# symfony:api-platform-dto-resources (Micro)
 
 ## Use when
-- Create API Platform resources using pure DTOs without Doctrine entities, enabling clean API design decoupled from database schema
+- Use when symfony api platform dto resources
 
-## Topics covered
-- Why DTO Resources?
-- Basic DTO Resource
-- Separate Input/Output DTOs
-- Pagination with DTOs
-- Nested Resources
-- External API Resource
-- Read-Only Aggregated Resource
-- Configuration Tips
+## Tags
+- api-platform
 
-## Operating rules
-1. Keep changes minimal and focused.
-2. Ask before running servers, builds, or tests.
-3. Use project conventions and existing structure.
+## Do
+- Keep changes minimal and focused
+- Ask before running servers/builds/tests
+- Follow existing project conventions
+
+## Avoid
+- Unnecessary context expansion
+- Changing unrelated files
 
 ## References
-See `reference.md` for full details and examples.
+- `reference.md` for full details

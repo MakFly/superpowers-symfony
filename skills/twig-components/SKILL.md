@@ -1,32 +1,25 @@
 ---
 name: symfony:twig-components
-description: Use when build reusable UI components with Symfony UX Twig Components and Live Components for reactive interfaces
+description: Use when symfony twig components
 allowed-tools:
   - Read
-  - Write
-  - Edit
-  - Bash
   - Glob
   - Grep
 ---
 
-# symfony:twig-components (Compact)
+# symfony:twig-components (Micro)
 
 ## Use when
-- Build reusable UI components with Symfony UX Twig Components and Live Components for reactive interfaces
+- Use when symfony twig components
 
-## Topics covered
-- Installation
-- Basic Twig Component
-- Component with Slots
-- Component with Logic
-- Live Components (Reactive)
-- Best Practices
+## Do
+- Keep changes minimal and focused
+- Ask before running servers/builds/tests
+- Follow existing project conventions
 
-## Operating rules
-1. Keep changes minimal and focused.
-2. Ask before running servers, builds, or tests.
-3. Use project conventions and existing structure.
+## Avoid
+- Unnecessary context expansion
+- Changing unrelated files
 
 ## References
-See `reference.md` for full details and examples.
+- `reference.md` for full details

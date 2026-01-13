@@ -1,6 +1,6 @@
 ---
 name: symfony:api-platform-tests
-description: Use when test API Platform resources with ApiTestCase, test collections, items, filters, and authentication
+description: Use when symfony api platform tests
 allowed-tools:
   - Read
   - Write
@@ -10,24 +10,22 @@ allowed-tools:
   - Grep
 ---
 
-# symfony:api-platform-tests (Compact)
+# symfony:api-platform-tests (Micro)
 
 ## Use when
-- Test API Platform resources with ApiTestCase, test collections, items, filters, and authentication
+- Use when symfony api platform tests
 
-## Topics covered
-- Setup
-- Basic API Tests
-- Testing with Authentication
-- Testing Filters
-- Testing Pagination
-- Testing Schema
-- Best Practices
+## Tags
+- api-platform
 
-## Operating rules
-1. Keep changes minimal and focused.
-2. Ask before running servers, builds, or tests.
-3. Use project conventions and existing structure.
+## Do
+- Keep changes minimal and focused
+- Ask before running servers/builds/tests
+- Follow existing project conventions
+
+## Avoid
+- Unnecessary context expansion
+- Changing unrelated files
 
 ## References
-See `reference.md` for full details and examples.
+- `reference.md` for full details

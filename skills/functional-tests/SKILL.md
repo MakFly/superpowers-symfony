@@ -1,34 +1,25 @@
 ---
 name: symfony:functional-tests
-description: Use when write functional tests for Symfony controllers and HTTP endpoints using WebTestCase, BrowserKit, and test clients
+description: Use when symfony functional tests
 allowed-tools:
   - Read
-  - Write
-  - Edit
-  - Bash
   - Glob
   - Grep
 ---
 
-# symfony:functional-tests (Compact)
+# symfony:functional-tests (Micro)
 
 ## Use when
-- Write functional tests for Symfony controllers and HTTP endpoints using WebTestCase, BrowserKit, and test clients
+- Use when symfony functional tests
 
-## Topics covered
-- Setup
-- WebTestCase Basics
-- HTTP Client Methods
-- Authentication in Tests
-- Form Testing
-- Testing with Crawler
-- API Testing
-- Testing Email Sending
+## Do
+- Keep changes minimal and focused
+- Ask before running servers/builds/tests
+- Follow existing project conventions
 
-## Operating rules
-1. Keep changes minimal and focused.
-2. Ask before running servers, builds, or tests.
-3. Use project conventions and existing structure.
+## Avoid
+- Unnecessary context expansion
+- Changing unrelated files
 
 ## References
-See `reference.md` for full details and examples.
+- `reference.md` for full details

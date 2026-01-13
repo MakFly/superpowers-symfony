@@ -1,31 +1,25 @@
 ---
 name: symfony:e2e-panther-playwright
-description: Use when write end-to-end tests with Symfony Panther for browser automation or Playwright for complex scenarios
+description: Use when symfony e2e panther playwright
 allowed-tools:
   - Read
-  - Write
-  - Edit
-  - Bash
   - Glob
   - Grep
 ---
 
-# symfony:e2e-panther-playwright (Compact)
+# symfony:e2e-panther-playwright (Micro)
 
 ## Use when
-- Write end-to-end tests with Symfony Panther for browser automation or Playwright for complex scenarios
+- Use when symfony e2e panther playwright
 
-## Topics covered
-- Symfony Panther
-- Playwright (Alternative)
-- Testing User Flows
-- CI Configuration
-- Best Practices
+## Do
+- Keep changes minimal and focused
+- Ask before running servers/builds/tests
+- Follow existing project conventions
 
-## Operating rules
-1. Keep changes minimal and focused.
-2. Ask before running servers, builds, or tests.
-3. Use project conventions and existing structure.
+## Avoid
+- Unnecessary context expansion
+- Changing unrelated files
 
 ## References
-See `reference.md` for full details and examples.
+- `reference.md` for full details

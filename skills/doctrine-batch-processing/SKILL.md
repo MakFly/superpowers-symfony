@@ -1,6 +1,6 @@
 ---
 name: symfony:doctrine-batch-processing
-description: Use when process large datasets efficiently with Doctrine batch processing, iteration, and memory management
+description: Use when symfony doctrine batch processing
 allowed-tools:
   - Read
   - Write
@@ -10,25 +10,22 @@ allowed-tools:
   - Grep
 ---
 
-# symfony:doctrine-batch-processing (Compact)
+# symfony:doctrine-batch-processing (Micro)
 
 ## Use when
-- Process large datasets efficiently with Doctrine batch processing, iteration, and memory management
+- Use when symfony doctrine batch processing
 
-## Topics covered
-- The Problem
-- Solution 1: Iterate
-- Solution 2: Batch with Clear
-- Solution 3: ID-Based Pagination
-- Solution 4: DBAL for Bulk Updates
-- Solution 5: Bulk Insert
-- Memory Monitoring
-- Symfony Command for Batch Processing
+## Tags
+- doctrine
 
-## Operating rules
-1. Keep changes minimal and focused.
-2. Ask before running servers, builds, or tests.
-3. Use project conventions and existing structure.
+## Do
+- Keep changes minimal and focused
+- Ask before running servers/builds/tests
+- Follow existing project conventions
+
+## Avoid
+- Unnecessary context expansion
+- Changing unrelated files
 
 ## References
-See `reference.md` for full details and examples.
+- `reference.md` for full details

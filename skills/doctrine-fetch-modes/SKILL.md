@@ -1,6 +1,6 @@
 ---
 name: symfony:doctrine-fetch-modes
-description: Use when optimize Doctrine queries with fetch modes, lazy loading, extra lazy collections, and query hints for performance
+description: Use when symfony doctrine fetch modes
 allowed-tools:
   - Read
   - Write
@@ -10,25 +10,22 @@ allowed-tools:
   - Grep
 ---
 
-# symfony:doctrine-fetch-modes (Compact)
+# symfony:doctrine-fetch-modes (Micro)
 
 ## Use when
-- Optimize Doctrine queries with fetch modes, lazy loading, extra lazy collections, and query hints for performance
+- Use when symfony doctrine fetch modes
 
-## Topics covered
-- Fetch Mode Types
-- Query-Level Fetch Mode
-- Join Fetch (Best Practice)
-- Partial Objects (Select Columns)
-- Batch Processing with Iteration
-- Proxy Objects
-- Preventing N+1
-- Query Hints
+## Tags
+- doctrine
 
-## Operating rules
-1. Keep changes minimal and focused.
-2. Ask before running servers, builds, or tests.
-3. Use project conventions and existing structure.
+## Do
+- Keep changes minimal and focused
+- Ask before running servers/builds/tests
+- Follow existing project conventions
+
+## Avoid
+- Unnecessary context expansion
+- Changing unrelated files
 
 ## References
-See `reference.md` for full details and examples.
+- `reference.md` for full details

@@ -1,6 +1,6 @@
 ---
 name: symfony:form-types-validation
-description: Use when build Symfony forms with custom Form Types, validation constraints, data transformers, and proper error handling
+description: Use when symfony form types validation
 allowed-tools:
   - Read
   - Write
@@ -10,25 +10,19 @@ allowed-tools:
   - Grep
 ---
 
-# symfony:form-types-validation (Compact)
+# symfony:form-types-validation (Micro)
 
 ## Use when
-- Build Symfony forms with custom Form Types, validation constraints, data transformers, and proper error handling
+- Use when symfony form types validation
 
-## Topics covered
-- Basic Form Type
-- Validation Constraints
-- Validation Groups
-- Custom Constraint
-- Data Transformers
-- Form Events
-- Controller Usage
-- Best Practices
+## Do
+- Keep changes minimal and focused
+- Ask before running servers/builds/tests
+- Follow existing project conventions
 
-## Operating rules
-1. Keep changes minimal and focused.
-2. Ask before running servers, builds, or tests.
-3. Use project conventions and existing structure.
+## Avoid
+- Unnecessary context expansion
+- Changing unrelated files
 
 ## References
-See `reference.md` for full details and examples.
+- `reference.md` for full details

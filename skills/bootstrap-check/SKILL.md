@@ -1,29 +1,25 @@
 ---
 name: symfony:bootstrap-check
-description: Use when verify Symfony project configuration including .env, services.yaml, doctrine settings, and framework requirements
+description: Use when symfony bootstrap check
 allowed-tools:
   - Read
   - Glob
   - Grep
 ---
 
-# symfony:bootstrap-check (Compact)
+# symfony:bootstrap-check (Micro)
 
 ## Use when
-- Verify Symfony project configuration including .env, services.yaml, doctrine settings, and framework requirements
+- Use when symfony bootstrap check
 
-## Topics covered
-- Essential Files Check
-- Quick Validation Commands
-- Common Issues & Fixes
-- API Platform Check
-- Messenger Check
-- Pre-Development Checklist
+## Do
+- Keep changes minimal and focused
+- Ask before running servers/builds/tests
+- Follow existing project conventions
 
-## Operating rules
-1. Keep changes minimal and focused.
-2. Ask before running servers, builds, or tests.
-3. Use project conventions and existing structure.
+## Avoid
+- Unnecessary context expansion
+- Changing unrelated files
 
 ## References
-See `reference.md` for full details and examples.
+- `reference.md` for full details

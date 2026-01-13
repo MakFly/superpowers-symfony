@@ -1,6 +1,6 @@
 ---
 name: symfony:symfony-messenger
-description: Use when async message handling with Symfony Messenger; configure transports (RabbitMQ, Redis, Doctrine); implement handlers, middleware, and retry strategies
+description: Use when symfony symfony messenger
 allowed-tools:
   - Read
   - Write
@@ -10,25 +10,22 @@ allowed-tools:
   - Grep
 ---
 
-# symfony:symfony-messenger (Compact)
+# symfony:symfony-messenger (Micro)
 
 ## Use when
-- Async message handling with Symfony Messenger; configure transports (RabbitMQ, Redis, Doctrine); implement handlers, middleware, and retry strategies
+- Use when symfony symfony messenger
 
-## Topics covered
-- Installation
-- Message & Handler
-- Configuration
-- Transport DSNs
-- Dispatching Messages
-- Envelope & Stamps
-- Worker Commands
-- Multiple Handlers
+## Tags
+- messenger
 
-## Operating rules
-1. Keep changes minimal and focused.
-2. Ask before running servers, builds, or tests.
-3. Use project conventions and existing structure.
+## Do
+- Keep changes minimal and focused
+- Ask before running servers/builds/tests
+- Follow existing project conventions
+
+## Avoid
+- Unnecessary context expansion
+- Changing unrelated files
 
 ## References
-See `reference.md` for full details and examples.
+- `reference.md` for full details

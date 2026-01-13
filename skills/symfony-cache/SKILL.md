@@ -1,6 +1,6 @@
 ---
 name: symfony:symfony-cache
-description: Use when implement caching with Symfony Cache component; configure pools, use cache tags for invalidation, and optimize performance
+description: Use when symfony symfony cache
 allowed-tools:
   - Read
   - Write
@@ -10,25 +10,22 @@ allowed-tools:
   - Grep
 ---
 
-# symfony:symfony-cache (Compact)
+# symfony:symfony-cache (Micro)
 
 ## Use when
-- Implement caching with Symfony Cache component; configure pools, use cache tags for invalidation, and optimize performance
+- Use when symfony symfony cache
 
-## Topics covered
-- Installation
-- Basic Usage
-- Configuration
-- Cache Adapters
-- Cache Pools
-- Cache Tags
-- HTTP Cache
-- Cache Attributes
+## Tags
+- cache
 
-## Operating rules
-1. Keep changes minimal and focused.
-2. Ask before running servers, builds, or tests.
-3. Use project conventions and existing structure.
+## Do
+- Keep changes minimal and focused
+- Ask before running servers/builds/tests
+- Follow existing project conventions
+
+## Avoid
+- Unnecessary context expansion
+- Changing unrelated files
 
 ## References
-See `reference.md` for full details and examples.
+- `reference.md` for full details

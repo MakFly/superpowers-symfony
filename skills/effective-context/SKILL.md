@@ -1,31 +1,25 @@
 ---
 name: symfony:effective-context
-description: Use when provide effective context to Claude for Symfony development with relevant files, patterns, and constraints
+description: Use when symfony effective context
 allowed-tools:
   - Read
   - Glob
   - Grep
 ---
 
-# symfony:effective-context (Compact)
+# symfony:effective-context (Micro)
 
 ## Use when
-- Provide effective context to Claude for Symfony development with relevant files, patterns, and constraints
+- Use when symfony effective context
 
-## Topics covered
-- What Context Helps
-- Code Context Examples
-- Effective Prompts
-- Including Error Context
-- Constraints to Mention
-- Project Structure Context
-- Version-Specific Context
-- Anti-Patterns to Avoid
+## Do
+- Keep changes minimal and focused
+- Ask before running servers/builds/tests
+- Follow existing project conventions
 
-## Operating rules
-1. Keep changes minimal and focused.
-2. Ask before running servers, builds, or tests.
-3. Use project conventions and existing structure.
+## Avoid
+- Unnecessary context expansion
+- Changing unrelated files
 
 ## References
-See `reference.md` for full details and examples.
+- `reference.md` for full details

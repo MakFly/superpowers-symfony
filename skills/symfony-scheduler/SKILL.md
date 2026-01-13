@@ -1,6 +1,6 @@
 ---
 name: symfony:symfony-scheduler
-description: Use when schedule recurring tasks with Symfony Scheduler component (7.1+); define schedules, triggers, and integrate with Messenger
+description: Use when symfony symfony scheduler
 allowed-tools:
   - Read
   - Write
@@ -10,25 +10,19 @@ allowed-tools:
   - Grep
 ---
 
-# symfony:symfony-scheduler (Compact)
+# symfony:symfony-scheduler (Micro)
 
 ## Use when
-- Schedule recurring tasks with Symfony Scheduler component (7.1+); define schedules, triggers, and integrate with Messenger
+- Use when symfony symfony scheduler
 
-## Topics covered
-- Installation
-- Basic Schedule
-- Trigger Types
-- Multiple Schedules
-- Running the Scheduler
-- Stateful Schedules
-- Testing Schedules
-- Monitoring
+## Do
+- Keep changes minimal and focused
+- Ask before running servers/builds/tests
+- Follow existing project conventions
 
-## Operating rules
-1. Keep changes minimal and focused.
-2. Ask before running servers, builds, or tests.
-3. Use project conventions and existing structure.
+## Avoid
+- Unnecessary context expansion
+- Changing unrelated files
 
 ## References
-See `reference.md` for full details and examples.
+- `reference.md` for full details

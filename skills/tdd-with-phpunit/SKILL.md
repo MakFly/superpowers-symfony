@@ -1,6 +1,6 @@
 ---
 name: symfony:tdd-with-phpunit
-description: Use when apply RED-GREEN-REFACTOR with PHPUnit for Symfony; use KernelTestCase, WebTestCase, and Foundry for comprehensive testing
+description: Use when symfony tdd with phpunit
 allowed-tools:
   - Read
   - Write
@@ -10,24 +10,19 @@ allowed-tools:
   - Grep
 ---
 
-# symfony:tdd-with-phpunit (Compact)
+# symfony:tdd-with-phpunit (Micro)
 
 ## Use when
-- Apply RED-GREEN-REFACTOR with PHPUnit for Symfony; use KernelTestCase, WebTestCase, and Foundry for comprehensive testing
+- Use when symfony tdd with phpunit
 
-## Topics covered
-- Installation
-- Test Execution
-- Test Types
-- RED-GREEN-REFACTOR Cycle
-- Assertions Reference
-- Data Providers
-- Best Practices
+## Do
+- Keep changes minimal and focused
+- Ask before running servers/builds/tests
+- Follow existing project conventions
 
-## Operating rules
-1. Keep changes minimal and focused.
-2. Ask before running servers, builds, or tests.
-3. Use project conventions and existing structure.
+## Avoid
+- Unnecessary context expansion
+- Changing unrelated files
 
 ## References
-See `reference.md` for full details and examples.
+- `reference.md` for full details

@@ -1,6 +1,6 @@
 ---
 name: symfony:config-env-parameters
-description: Use when manage Symfony configuration with .env files, parameters, secrets, and environment-specific settings
+description: Use when symfony config env parameters
 allowed-tools:
   - Read
   - Write
@@ -10,24 +10,22 @@ allowed-tools:
   - Grep
 ---
 
-# symfony:config-env-parameters (Compact)
+# symfony:config-env-parameters (Micro)
 
 ## Use when
-- Manage Symfony configuration with .env files, parameters, secrets, and environment-specific settings
+- Use when symfony config env parameters
 
-## Topics covered
-- Environment Files
-- Parameters
-- Secrets
-- Environment-Specific Config
-- Feature Flags
-- Best Practices
-- Debug Configuration
+## Tags
+- config
 
-## Operating rules
-1. Keep changes minimal and focused.
-2. Ask before running servers, builds, or tests.
-3. Use project conventions and existing structure.
+## Do
+- Keep changes minimal and focused
+- Ask before running servers/builds/tests
+- Follow existing project conventions
+
+## Avoid
+- Unnecessary context expansion
+- Changing unrelated files
 
 ## References
-See `reference.md` for full details and examples.
+- `reference.md` for full details

@@ -1,6 +1,6 @@
 ---
 name: symfony:api-platform-versioning
-description: Use when implement API versioning strategies in API Platform including URI, header, and query parameter approaches
+description: Use when symfony api platform versioning
 allowed-tools:
   - Read
   - Write
@@ -10,23 +10,22 @@ allowed-tools:
   - Grep
 ---
 
-# symfony:api-platform-versioning (Compact)
+# symfony:api-platform-versioning (Micro)
 
 ## Use when
-- Implement API versioning strategies in API Platform including URI, header, and query parameter approaches
+- Use when symfony api platform versioning
 
-## Topics covered
-- Versioning Strategies
-- Deprecation
-- Migration Guide Pattern
-- Routing Configuration
-- Testing Multiple Versions
-- Best Practices
+## Tags
+- api-platform
 
-## Operating rules
-1. Keep changes minimal and focused.
-2. Ask before running servers, builds, or tests.
-3. Use project conventions and existing structure.
+## Do
+- Keep changes minimal and focused
+- Ask before running servers/builds/tests
+- Follow existing project conventions
+
+## Avoid
+- Unnecessary context expansion
+- Changing unrelated files
 
 ## References
-See `reference.md` for full details and examples.
+- `reference.md` for full details

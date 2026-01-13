@@ -1,31 +1,31 @@
 ---
 name: symfony:quality-checks
-description: Use when run code quality tools including PHP-CS-Fixer for style, PHPStan for static analysis, and Psalm for type safety
+description: Use when symfony quality checks
 allowed-tools:
   - Read
+  - Write
+  - Edit
+  - Bash
   - Glob
   - Grep
 ---
 
-# symfony:quality-checks (Compact)
+# symfony:quality-checks (Micro)
 
 ## Use when
-- Run code quality tools including PHP-CS-Fixer for style, PHPStan for static analysis, and Psalm for type safety
+- Use when symfony quality checks
 
-## Topics covered
-- Tools Overview
-- PHP-CS-Fixer
-- PHPStan
-- Psalm
-- Composer Scripts
-- CI Configuration
-- Pre-commit Hook
-- Best Practices
+## Tags
+- quality
 
-## Operating rules
-1. Keep changes minimal and focused.
-2. Ask before running servers, builds, or tests.
-3. Use project conventions and existing structure.
+## Do
+- Keep changes minimal and focused
+- Ask before running servers/builds/tests
+- Follow existing project conventions
+
+## Avoid
+- Unnecessary context expansion
+- Changing unrelated files
 
 ## References
-See `reference.md` for full details and examples.
+- `reference.md` for full details

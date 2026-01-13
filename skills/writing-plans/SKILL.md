@@ -1,31 +1,25 @@
 ---
 name: symfony:writing-plans
-description: Use when create structured implementation plans for Symfony features with clear steps, dependencies, and acceptance criteria
+description: Use when symfony writing plans
 allowed-tools:
   - Read
   - Glob
   - Grep
 ---
 
-# symfony:writing-plans (Compact)
+# symfony:writing-plans (Micro)
 
 ## Use when
-- Create structured implementation plans for Symfony features with clear steps, dependencies, and acceptance criteria
+- Use when symfony writing plans
 
-## Topics covered
-- Plan Structure
-- Summary
-- Scope
-- Dependencies
-- Entities
-- Services
-- API Endpoints
-- Implementation Steps
+## Do
+- Keep changes minimal and focused
+- Ask before running servers/builds/tests
+- Follow existing project conventions
 
-## Operating rules
-1. Keep changes minimal and focused.
-2. Ask before running servers, builds, or tests.
-3. Use project conventions and existing structure.
+## Avoid
+- Unnecessary context expansion
+- Changing unrelated files
 
 ## References
-See `reference.md` for full details and examples.
+- `reference.md` for full details

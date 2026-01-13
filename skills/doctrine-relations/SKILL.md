@@ -1,6 +1,6 @@
 ---
 name: symfony:doctrine-relations
-description: Use when define Doctrine entity relationships (OneToMany, ManyToMany, ManyToOne); configure fetch modes, cascade operations, and orphan removal; prevent N+1 queries
+description: Use when symfony doctrine relations
 allowed-tools:
   - Read
   - Write
@@ -10,24 +10,22 @@ allowed-tools:
   - Grep
 ---
 
-# symfony:doctrine-relations (Compact)
+# symfony:doctrine-relations (Micro)
 
 ## Use when
-- Define Doctrine entity relationships (OneToMany, ManyToMany, ManyToOne); configure fetch modes, cascade operations, and orphan removal; prevent N+1 queries
+- Use when symfony doctrine relations
 
-## Topics covered
-- Relationship Types
-- Fetch Modes
-- Cascade Operations
-- Preventing N+1 Queries
-- Self-Referencing Relations
-- Index Foreign Keys
-- Best Practices
+## Tags
+- doctrine
 
-## Operating rules
-1. Keep changes minimal and focused.
-2. Ask before running servers, builds, or tests.
-3. Use project conventions and existing structure.
+## Do
+- Keep changes minimal and focused
+- Ask before running servers/builds/tests
+- Follow existing project conventions
+
+## Avoid
+- Unnecessary context expansion
+- Changing unrelated files
 
 ## References
-See `reference.md` for full details and examples.
+- `reference.md` for full details

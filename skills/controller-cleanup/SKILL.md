@@ -1,32 +1,25 @@
 ---
 name: symfony:controller-cleanup
-description: Use when refactor fat controllers into lean controllers by extracting business logic to services, handlers, and dedicated classes
+description: Use when symfony controller cleanup
 allowed-tools:
   - Read
-  - Write
-  - Edit
-  - Bash
   - Glob
   - Grep
 ---
 
-# symfony:controller-cleanup (Compact)
+# symfony:controller-cleanup (Micro)
 
 ## Use when
-- Refactor fat controllers into lean controllers by extracting business logic to services, handlers, and dedicated classes
+- Use when symfony controller cleanup
 
-## Topics covered
-- The Problem: Fat Controllers
-- The Solution: Lean Controller
-- Controller Patterns
-- Extract Responsibilities
-- Testing Lean Controllers
-- Checklist
+## Do
+- Keep changes minimal and focused
+- Ask before running servers/builds/tests
+- Follow existing project conventions
 
-## Operating rules
-1. Keep changes minimal and focused.
-2. Ask before running servers, builds, or tests.
-3. Use project conventions and existing structure.
+## Avoid
+- Unnecessary context expansion
+- Changing unrelated files
 
 ## References
-See `reference.md` for full details and examples.
+- `reference.md` for full details

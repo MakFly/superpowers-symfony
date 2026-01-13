@@ -1,6 +1,6 @@
 ---
 name: symfony:doctrine-transactions
-description: Use when handle database transactions with Doctrine UnitOfWork; implement optimistic locking, flush strategies, and transaction boundaries
+description: Use when symfony doctrine transactions
 allowed-tools:
   - Read
   - Write
@@ -10,24 +10,22 @@ allowed-tools:
   - Grep
 ---
 
-# symfony:doctrine-transactions (Compact)
+# symfony:doctrine-transactions (Micro)
 
 ## Use when
-- Handle database transactions with Doctrine UnitOfWork; implement optimistic locking, flush strategies, and transaction boundaries
+- Use when symfony doctrine transactions
 
-## Topics covered
-- Basic Transactions
-- Flush Strategies
-- Optimistic Locking
-- Pessimistic Locking
-- Error Handling
-- EntityManager State
-- Best Practices
+## Tags
+- doctrine
 
-## Operating rules
-1. Keep changes minimal and focused.
-2. Ask before running servers, builds, or tests.
-3. Use project conventions and existing structure.
+## Do
+- Keep changes minimal and focused
+- Ask before running servers/builds/tests
+- Follow existing project conventions
+
+## Avoid
+- Unnecessary context expansion
+- Changing unrelated files
 
 ## References
-See `reference.md` for full details and examples.
+- `reference.md` for full details

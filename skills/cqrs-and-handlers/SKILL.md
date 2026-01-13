@@ -1,34 +1,25 @@
 ---
 name: symfony:cqrs-and-handlers
-description: Use when implement CQRS pattern in Symfony with separate Command and Query handlers using Messenger component
+description: Use when symfony cqrs and handlers
 allowed-tools:
   - Read
-  - Write
-  - Edit
-  - Bash
   - Glob
   - Grep
 ---
 
-# symfony:cqrs-and-handlers (Compact)
+# symfony:cqrs-and-handlers (Micro)
 
 ## Use when
-- Implement CQRS pattern in Symfony with separate Command and Query handlers using Messenger component
+- Use when symfony cqrs and handlers
 
-## Topics covered
-- Overview
-- Project Structure
-- Commands
-- Queries
-- Separate Buses
-- Controller Usage
-- Read Models (Optional)
-- Best Practices
+## Do
+- Keep changes minimal and focused
+- Ask before running servers/builds/tests
+- Follow existing project conventions
 
-## Operating rules
-1. Keep changes minimal and focused.
-2. Ask before running servers, builds, or tests.
-3. Use project conventions and existing structure.
+## Avoid
+- Unnecessary context expansion
+- Changing unrelated files
 
 ## References
-See `reference.md` for full details and examples.
+- `reference.md` for full details

@@ -1,34 +1,25 @@
 ---
 name: symfony:interfaces-and-autowiring
-description: Use when master Symfony's Dependency Injection with autowiring, interface binding, service decoration, and tagged services for flexible architecture
+description: Use when symfony interfaces and autowiring
 allowed-tools:
   - Read
-  - Write
-  - Edit
-  - Bash
   - Glob
   - Grep
 ---
 
-# symfony:interfaces-and-autowiring (Compact)
+# symfony:interfaces-and-autowiring (Micro)
 
 ## Use when
-- Master Symfony's Dependency Injection with autowiring, interface binding, service decoration, and tagged services for flexible architecture
+- Use when symfony interfaces and autowiring
 
-## Topics covered
-- Basic Autowiring
-- Interface Binding
-- Service Decoration
-- Tagged Services
-- Named Autowiring
-- Lazy Services
-- Debug Commands
-- Best Practices
+## Do
+- Keep changes minimal and focused
+- Ask before running servers/builds/tests
+- Follow existing project conventions
 
-## Operating rules
-1. Keep changes minimal and focused.
-2. Ask before running servers, builds, or tests.
-3. Use project conventions and existing structure.
+## Avoid
+- Unnecessary context expansion
+- Changing unrelated files
 
 ## References
-See `reference.md` for full details and examples.
+- `reference.md` for full details

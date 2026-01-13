@@ -1,31 +1,25 @@
 ---
 name: symfony:using-symfony-superpowers
-description: Use when entry point for Symfony Superpowers - lightweight workflow guidance and command map.
+description: Use when symfony using symfony superpowers
 allowed-tools:
   - Read
   - Glob
   - Grep
 ---
 
-# Symfony Superpowers (Compact)
+# symfony:using-symfony-superpowers (Micro)
 
-## When to use
-- Symfony 6.4/7.x/8.x, API Platform, Doctrine, Messenger
+## Use when
+- Use when symfony using symfony superpowers
 
-## How to operate
-1. Detect Symfony version and API Platform presence.
-2. Prefer services and actions over controller logic.
-3. Ask before starting any server or running Docker.
-4. Use the project’s runner (Docker/DDEV/host) as detected.
+## Do
+- Keep changes minimal and focused
+- Ask before running servers/builds/tests
+- Follow existing project conventions
 
-## Recommended entry skills
-- `quality-checks`, `tdd-with-pest` or `tdd-with-phpunit`
-- `doctrine-migrations`, `doctrine-relations`
-- `api-platform-resources`, `api-platform-serialization`
-- `symfony-messenger`, `symfony-voters`
+## Avoid
+- Unnecessary context expansion
+- Changing unrelated files
 
-## Commands (only if user asks to run)
-- `/superpowers-symfony:write-plan`
-- `/superpowers-symfony:execute-plan`
-- `/superpowers-symfony:symfony-check`
-- `/superpowers-symfony:symfony-tdd-pest`
+## References
+- None

@@ -1,6 +1,6 @@
 ---
 name: symfony:doctrine-migrations
-description: Use when create and manage Doctrine migrations for schema versioning; handle migration dependencies, rollbacks, and production deployment
+description: Use when symfony doctrine migrations
 allowed-tools:
   - Read
   - Write
@@ -10,25 +10,22 @@ allowed-tools:
   - Grep
 ---
 
-# symfony:doctrine-migrations (Compact)
+# symfony:doctrine-migrations (Micro)
 
 ## Use when
-- Create and manage Doctrine migrations for schema versioning; handle migration dependencies, rollbacks, and production deployment
+- Use when symfony doctrine migrations
 
-## Topics covered
-- Installation
-- Basic Commands
-- Migration Workflow
-- Advanced Migrations
-- Rollback
-- Version Control
-- Configuration
-- Production Best Practices
+## Tags
+- doctrine
 
-## Operating rules
-1. Keep changes minimal and focused.
-2. Ask before running servers, builds, or tests.
-3. Use project conventions and existing structure.
+## Do
+- Keep changes minimal and focused
+- Ask before running servers/builds/tests
+- Follow existing project conventions
+
+## Avoid
+- Unnecessary context expansion
+- Changing unrelated files
 
 ## References
-See `reference.md` for full details and examples.
+- `reference.md` for full details

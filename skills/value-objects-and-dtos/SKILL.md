@@ -1,31 +1,25 @@
 ---
 name: symfony:value-objects-and-dtos
-description: Use when design Value Objects for domain concepts and DTOs for data transfer with proper immutability and validation
+description: Use when symfony value objects and dtos
 allowed-tools:
   - Read
-  - Write
-  - Edit
-  - Bash
   - Glob
   - Grep
 ---
 
-# symfony:value-objects-and-dtos (Compact)
+# symfony:value-objects-and-dtos (Micro)
 
 ## Use when
-- Design Value Objects for domain concepts and DTOs for data transfer with proper immutability and validation
+- Use when symfony value objects and dtos
 
-## Topics covered
-- Value Objects
-- Doctrine Embeddables
-- DTOs (Data Transfer Objects)
-- Serializer Configuration
-- Best Practices
+## Do
+- Keep changes minimal and focused
+- Ask before running servers/builds/tests
+- Follow existing project conventions
 
-## Operating rules
-1. Keep changes minimal and focused.
-2. Ask before running servers, builds, or tests.
-3. Use project conventions and existing structure.
+## Avoid
+- Unnecessary context expansion
+- Changing unrelated files
 
 ## References
-See `reference.md` for full details and examples.
+- `reference.md` for full details

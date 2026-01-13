@@ -1,6 +1,6 @@
 ---
 name: symfony:messenger-retry-failures
-description: Use when handle message failures with retry strategies, dead letter queues, and failure recovery in Symfony Messenger
+description: Use when symfony messenger retry failures
 allowed-tools:
   - Read
   - Write
@@ -10,25 +10,22 @@ allowed-tools:
   - Grep
 ---
 
-# symfony:messenger-retry-failures (Compact)
+# symfony:messenger-retry-failures (Micro)
 
 ## Use when
-- Handle message failures with retry strategies, dead letter queues, and failure recovery in Symfony Messenger
+- Use when symfony messenger retry failures
 
-## Topics covered
-- Retry Configuration
-- Retry Behavior
-- Exception Types
-- Custom Retry Strategy
-- Managing Failed Messages
-- Failure Notifications
-- Idempotent Handlers
-- Best Practices
+## Tags
+- messenger
 
-## Operating rules
-1. Keep changes minimal and focused.
-2. Ask before running servers, builds, or tests.
-3. Use project conventions and existing structure.
+## Do
+- Keep changes minimal and focused
+- Ask before running servers/builds/tests
+- Follow existing project conventions
+
+## Avoid
+- Unnecessary context expansion
+- Changing unrelated files
 
 ## References
-See `reference.md` for full details and examples.
+- `reference.md` for full details

@@ -1,6 +1,6 @@
 ---
 name: symfony:symfony-voters
-description: Use when implement granular authorization with Symfony Voters; decouple permission logic from controllers; test authorization separately from business logic
+description: Use when symfony symfony voters
 allowed-tools:
   - Read
   - Write
@@ -10,23 +10,19 @@ allowed-tools:
   - Grep
 ---
 
-# symfony:symfony-voters (Compact)
+# symfony:symfony-voters (Micro)
 
 ## Use when
-- Implement granular authorization with Symfony Voters; decouple permission logic from controllers; test authorization separately from business logic
+- Use when symfony symfony voters
 
-## Topics covered
-- Creating a Voter
-- Using Voters
-- API Platform Integration
-- Complex Voting Logic
-- Testing Voters
-- Best Practices
+## Do
+- Keep changes minimal and focused
+- Ask before running servers/builds/tests
+- Follow existing project conventions
 
-## Operating rules
-1. Keep changes minimal and focused.
-2. Ask before running servers, builds, or tests.
-3. Use project conventions and existing structure.
+## Avoid
+- Unnecessary context expansion
+- Changing unrelated files
 
 ## References
-See `reference.md` for full details and examples.
+- `reference.md` for full details

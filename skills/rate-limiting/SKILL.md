@@ -1,6 +1,6 @@
 ---
 name: symfony:rate-limiting
-description: Use when implement rate limiting with Symfony RateLimiter component; configure sliding window, token bucket, and fixed window algorithms
+description: Use when symfony rate limiting
 allowed-tools:
   - Read
   - Write
@@ -10,25 +10,19 @@ allowed-tools:
   - Grep
 ---
 
-# symfony:rate-limiting (Compact)
+# symfony:rate-limiting (Micro)
 
 ## Use when
-- Implement rate limiting with Symfony RateLimiter component; configure sliding window, token bucket, and fixed window algorithms
+- Use when symfony rate limiting
 
-## Topics covered
-- Installation
-- Configuration
-- Rate Limiting Algorithms
-- Using Rate Limiters
-- Event Subscriber for Global Rate Limiting
-- Reserve Tokens (Blocking)
-- Testing
-- Best Practices
+## Do
+- Keep changes minimal and focused
+- Ask before running servers/builds/tests
+- Follow existing project conventions
 
-## Operating rules
-1. Keep changes minimal and focused.
-2. Ask before running servers, builds, or tests.
-3. Use project conventions and existing structure.
+## Avoid
+- Unnecessary context expansion
+- Changing unrelated files
 
 ## References
-See `reference.md` for full details and examples.
+- `reference.md` for full details

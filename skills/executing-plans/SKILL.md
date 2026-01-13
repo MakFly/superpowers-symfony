@@ -1,30 +1,28 @@
 ---
 name: symfony:executing-plans
-description: Use when methodically execute implementation plans with TDD approach, incremental commits, and continuous validation
+description: Use when symfony executing plans
 allowed-tools:
   - Read
+  - Write
+  - Edit
+  - Bash
   - Glob
   - Grep
 ---
 
-# symfony:executing-plans (Compact)
+# symfony:executing-plans (Micro)
 
 ## Use when
-- Methodically execute implementation plans with TDD approach, incremental commits, and continuous validation
+- Use when symfony executing plans
 
-## Topics covered
-- Execution Workflow
-- Execution Patterns
-- Handling Blockers
-- Progress Tracking
-- Steps
-- Final Validation
-- Merge Checklist
+## Do
+- Keep changes minimal and focused
+- Ask before running servers/builds/tests
+- Follow existing project conventions
 
-## Operating rules
-1. Keep changes minimal and focused.
-2. Ask before running servers, builds, or tests.
-3. Use project conventions and existing structure.
+## Avoid
+- Unnecessary context expansion
+- Changing unrelated files
 
 ## References
-See `reference.md` for full details and examples.
+- `reference.md` for full details

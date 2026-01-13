@@ -1,6 +1,6 @@
 ---
 name: symfony:api-platform-serialization
-description: Use when control API output with serialization groups, custom normalizers, and context-aware serialization in API Platform
+description: Use when symfony api platform serialization
 allowed-tools:
   - Read
   - Write
@@ -10,23 +10,22 @@ allowed-tools:
   - Grep
 ---
 
-# symfony:api-platform-serialization (Compact)
+# symfony:api-platform-serialization (Micro)
 
 ## Use when
-- Control API output with serialization groups, custom normalizers, and context-aware serialization in API Platform
+- Use when symfony api platform serialization
 
-## Topics covered
-- Serialization Groups
-- Custom Normalizers
-- Context Builders
-- Max Depth
-- Ignore Properties
-- Best Practices
+## Tags
+- api-platform
 
-## Operating rules
-1. Keep changes minimal and focused.
-2. Ask before running servers, builds, or tests.
-3. Use project conventions and existing structure.
+## Do
+- Keep changes minimal and focused
+- Ask before running servers/builds/tests
+- Follow existing project conventions
+
+## Avoid
+- Unnecessary context expansion
+- Changing unrelated files
 
 ## References
-See `reference.md` for full details and examples.
+- `reference.md` for full details

@@ -1,6 +1,6 @@
 ---
 name: symfony:api-platform-security
-description: Use when secure API Platform resources with security expressions, voters, and operation-level access control
+description: Use when symfony api platform security
 allowed-tools:
   - Read
   - Write
@@ -10,24 +10,22 @@ allowed-tools:
   - Grep
 ---
 
-# symfony:api-platform-security (Compact)
+# symfony:api-platform-security (Micro)
 
 ## Use when
-- Secure API Platform resources with security expressions, voters, and operation-level access control
+- Use when symfony api platform security
 
-## Topics covered
-- Operation-Level Security
-- Security Expressions Reference
-- Collection Security
-- Property-Level Security
-- JWT Authentication
-- Rate Limiting
-- Best Practices
+## Tags
+- api-platform, security
 
-## Operating rules
-1. Keep changes minimal and focused.
-2. Ask before running servers, builds, or tests.
-3. Use project conventions and existing structure.
+## Do
+- Keep changes minimal and focused
+- Ask before running servers/builds/tests
+- Follow existing project conventions
+
+## Avoid
+- Unnecessary context expansion
+- Changing unrelated files
 
 ## References
-See `reference.md` for full details and examples.
+- `reference.md` for full details

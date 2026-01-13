@@ -1,6 +1,6 @@
 ---
 name: symfony:api-platform-resources
-description: Use when configure API Platform resources with operations, pagination, and output DTOs for clean, versioned REST/GraphQL APIs
+description: Use when symfony api platform resources
 allowed-tools:
   - Read
   - Write
@@ -10,24 +10,22 @@ allowed-tools:
   - Grep
 ---
 
-# symfony:api-platform-resources (Compact)
+# symfony:api-platform-resources (Micro)
 
 ## Use when
-- Configure API Platform resources with operations, pagination, and output DTOs for clean, versioned REST/GraphQL APIs
+- Use when symfony api platform resources
 
-## Topics covered
-- Installation
-- Basic Resource
-- Operations Configuration
-- Pagination
-- Output DTOs
-- Input DTOs
-- Best Practices
+## Tags
+- api-platform
 
-## Operating rules
-1. Keep changes minimal and focused.
-2. Ask before running servers, builds, or tests.
-3. Use project conventions and existing structure.
+## Do
+- Keep changes minimal and focused
+- Ask before running servers/builds/tests
+- Follow existing project conventions
+
+## Avoid
+- Unnecessary context expansion
+- Changing unrelated files
 
 ## References
-See `reference.md` for full details and examples.
+- `reference.md` for full details

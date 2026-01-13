@@ -1,31 +1,25 @@
 ---
 name: symfony:daily-workflow
-description: Use when daily development workflow for Symfony projects including common tasks, debugging, and productivity tips
+description: Use when symfony daily workflow
 allowed-tools:
   - Read
   - Glob
   - Grep
 ---
 
-# symfony:daily-workflow (Compact)
+# symfony:daily-workflow (Micro)
 
 ## Use when
-- Daily development workflow for Symfony projects including common tasks, debugging, and productivity tips
+- Use when symfony daily workflow
 
-## Topics covered
-- Starting Your Day
-- Common Development Tasks
-- Debugging
-- Testing Workflow
-- Code Quality
-- API Development
-- End of Day
-- Quick Reference
+## Do
+- Keep changes minimal and focused
+- Ask before running servers/builds/tests
+- Follow existing project conventions
 
-## Operating rules
-1. Keep changes minimal and focused.
-2. Ask before running servers, builds, or tests.
-3. Use project conventions and existing structure.
+## Avoid
+- Unnecessary context expansion
+- Changing unrelated files
 
 ## References
-See `reference.md` for full details and examples.
+- `reference.md` for full details

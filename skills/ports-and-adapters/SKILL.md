@@ -1,33 +1,25 @@
 ---
 name: symfony:ports-and-adapters
-description: Use when implement Hexagonal Architecture (Ports and Adapters) in Symfony; separate domain logic from infrastructure with clear boundaries
+description: Use when symfony ports and adapters
 allowed-tools:
   - Read
-  - Write
-  - Edit
-  - Bash
   - Glob
   - Grep
 ---
 
-# symfony:ports-and-adapters (Compact)
+# symfony:ports-and-adapters (Micro)
 
 ## Use when
-- Implement Hexagonal Architecture (Ports and Adapters) in Symfony; separate domain logic from infrastructure with clear boundaries
+- Use when symfony ports and adapters
 
-## Topics covered
-- Concept
-- Directory Structure
-- Domain Layer
-- Application Layer
-- Infrastructure Layer
-- Controller (Infrastructure)
-- Benefits
+## Do
+- Keep changes minimal and focused
+- Ask before running servers/builds/tests
+- Follow existing project conventions
 
-## Operating rules
-1. Keep changes minimal and focused.
-2. Ask before running servers, builds, or tests.
-3. Use project conventions and existing structure.
+## Avoid
+- Unnecessary context expansion
+- Changing unrelated files
 
 ## References
-See `reference.md` for full details and examples.
+- `reference.md` for full details

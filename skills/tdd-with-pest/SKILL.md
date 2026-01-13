@@ -1,6 +1,6 @@
 ---
 name: symfony:tdd-with-pest
-description: Use when apply RED-GREEN-REFACTOR with Pest PHP for Symfony; use Foundry factories, functional tests with WebTestCase, verify failures before implementation
+description: Use when symfony tdd with pest
 allowed-tools:
   - Read
   - Write
@@ -10,25 +10,19 @@ allowed-tools:
   - Grep
 ---
 
-# symfony:tdd-with-pest (Compact)
+# symfony:tdd-with-pest (Micro)
 
 ## Use when
-- Apply RED-GREEN-REFACTOR with Pest PHP for Symfony; use Foundry factories, functional tests with WebTestCase, verify failures before implementation
+- Use when symfony tdd with pest
 
-## Topics covered
-- Installation
-- Test Execution
-- RED Phase - Failure First
-- GREEN Phase - Minimal Code
-- REFACTOR Phase
-- Foundry Integration
-- Pest Expectations
-- Key Principles
+## Do
+- Keep changes minimal and focused
+- Ask before running servers/builds/tests
+- Follow existing project conventions
 
-## Operating rules
-1. Keep changes minimal and focused.
-2. Ask before running servers, builds, or tests.
-3. Use project conventions and existing structure.
+## Avoid
+- Unnecessary context expansion
+- Changing unrelated files
 
 ## References
-See `reference.md` for full details and examples.
+- `reference.md` for full details

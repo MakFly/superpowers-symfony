@@ -1,6 +1,6 @@
 ---
 name: symfony:api-platform-filters
-description: Use when implement API Platform filters for search, date ranges, boolean, and custom filtering with proper indexing
+description: Use when symfony api platform filters
 allowed-tools:
   - Read
   - Write
@@ -10,22 +10,22 @@ allowed-tools:
   - Grep
 ---
 
-# symfony:api-platform-filters (Compact)
+# symfony:api-platform-filters (Micro)
 
 ## Use when
-- Implement API Platform filters for search, date ranges, boolean, and custom filtering with proper indexing
+- Use when symfony api platform filters
 
-## Topics covered
-- Built-in Filters
-- Custom Filters
-- Filter Groups
-- Database Indexing
-- Best Practices
+## Tags
+- api-platform
 
-## Operating rules
-1. Keep changes minimal and focused.
-2. Ask before running servers, builds, or tests.
-3. Use project conventions and existing structure.
+## Do
+- Keep changes minimal and focused
+- Ask before running servers/builds/tests
+- Follow existing project conventions
+
+## Avoid
+- Unnecessary context expansion
+- Changing unrelated files
 
 ## References
-See `reference.md` for full details and examples.
+- `reference.md` for full details
