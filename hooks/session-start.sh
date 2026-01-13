@@ -305,13 +305,6 @@ main() {
 }
 EOF
 
-  # Load and output onboarding skill if available
-  if [[ -f "$SKILL_DIR/SKILL.md" ]]; then
-    echo ""
-    echo "---"
-    echo ""
-    cat "$SKILL_DIR/SKILL.md"
-  fi
 }
 
 main "$@"

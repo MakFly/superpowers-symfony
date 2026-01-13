@@ -84,19 +84,14 @@ Then use them with:
 /write-plan
 ```
 
-### Method 3: Reference in Project CLAUDE.md
+### Method 3: Reference in Project CLAUDE.md (Not recommended)
 
-Add skill references to your project's `CLAUDE.md` file:
+Avoid `@` file references in `CLAUDE.md` because they force-load large files and increase context usage. Prefer explicit skill invocation instead:
 
-```markdown
-# Project Instructions
-
-## Symfony Skills Reference
-When working on this project, use these skills from superpowers-symfony:
-
-@~/.claude/plugins/superpowers-symfony/skills/tdd-with-pest/SKILL.md
-@~/.claude/plugins/superpowers-symfony/skills/api-platform-dto-resources/SKILL.md
-@~/.claude/plugins/superpowers-symfony/skills/doctrine-relations/SKILL.md
+```
+Use the skill symfony:tdd-with-pest
+Use the skill symfony:api-platform-dto-resources
+Use the skill symfony:doctrine-relations
 ```
 
 ### Method 4: Direct Skill Path Reference
