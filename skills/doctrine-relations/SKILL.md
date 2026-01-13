@@ -1,6 +1,13 @@
 ---
 name: symfony:doctrine-relations
 description: Define Doctrine entity relationships (OneToMany, ManyToMany, ManyToOne); configure fetch modes, cascade operations, and orphan removal; prevent N+1 queries
+allowed-tools:
+  - Read
+  - Write
+  - Edit
+  - Bash
+  - Glob
+  - Grep
 ---
 
 # symfony:doctrine-relations (Compact)

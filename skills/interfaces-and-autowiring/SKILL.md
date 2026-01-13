@@ -1,6 +1,13 @@
 ---
 name: symfony:interfaces-and-autowiring
 description: Master Symfony's Dependency Injection with autowiring, interface binding, service decoration, and tagged services for flexible architecture
+allowed-tools:
+  - Read
+  - Write
+  - Edit
+  - Bash
+  - Glob
+  - Grep
 ---
 
 # symfony:interfaces-and-autowiring (Compact)

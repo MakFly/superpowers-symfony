@@ -1,6 +1,13 @@
 ---
 name: symfony:api-platform-versioning
 description: Implement API versioning strategies in API Platform including URI, header, and query parameter approaches
+allowed-tools:
+  - Read
+  - Write
+  - Edit
+  - Bash
+  - Glob
+  - Grep
 ---
 
 # symfony:api-platform-versioning (Compact)

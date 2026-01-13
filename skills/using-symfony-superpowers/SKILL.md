@@ -1,6 +1,13 @@
 ---
 name: symfony:using-symfony-superpowers
 description: Entry point for Symfony Superpowers - lightweight workflow guidance and command map.
+allowed-tools:
+  - Read
+  - Write
+  - Edit
+  - Bash
+  - Glob
+  - Grep
 ---
 
 # Symfony Superpowers (Compact)

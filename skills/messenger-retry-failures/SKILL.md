@@ -1,6 +1,13 @@
 ---
 name: symfony:messenger-retry-failures
 description: Handle message failures with retry strategies, dead letter queues, and failure recovery in Symfony Messenger
+allowed-tools:
+  - Read
+  - Write
+  - Edit
+  - Bash
+  - Glob
+  - Grep
 ---
 
 # symfony:messenger-retry-failures (Compact)

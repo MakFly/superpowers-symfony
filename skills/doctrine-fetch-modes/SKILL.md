@@ -1,6 +1,13 @@
 ---
 name: symfony:doctrine-fetch-modes
 description: Optimize Doctrine queries with fetch modes, lazy loading, extra lazy collections, and query hints for performance
+allowed-tools:
+  - Read
+  - Write
+  - Edit
+  - Bash
+  - Glob
+  - Grep
 ---
 
 # symfony:doctrine-fetch-modes (Compact)

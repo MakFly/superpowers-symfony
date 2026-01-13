@@ -1,6 +1,13 @@
 ---
 name: symfony:api-platform-security
 description: Secure API Platform resources with security expressions, voters, and operation-level access control
+allowed-tools:
+  - Read
+  - Write
+  - Edit
+  - Bash
+  - Glob
+  - Grep
 ---
 
 # symfony:api-platform-security (Compact)

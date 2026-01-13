@@ -1,6 +1,13 @@
 ---
 name: symfony:tdd-with-phpunit
 description: Apply RED-GREEN-REFACTOR with PHPUnit for Symfony; use KernelTestCase, WebTestCase, and Foundry for comprehensive testing
+allowed-tools:
+  - Read
+  - Write
+  - Edit
+  - Bash
+  - Glob
+  - Grep
 ---
 
 # symfony:tdd-with-phpunit (Compact)

@@ -1,6 +1,13 @@
 ---
 name: symfony:effective-context
 description: Provide effective context to Claude for Symfony development with relevant files, patterns, and constraints
+allowed-tools:
+  - Read
+  - Write
+  - Edit
+  - Bash
+  - Glob
+  - Grep
 ---
 
 # symfony:effective-context (Compact)

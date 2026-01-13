@@ -1,6 +1,13 @@
 ---
 name: symfony:symfony-messenger
 description: Async message handling with Symfony Messenger; configure transports (RabbitMQ, Redis, Doctrine); implement handlers, middleware, and retry strategies
+allowed-tools:
+  - Read
+  - Write
+  - Edit
+  - Bash
+  - Glob
+  - Grep
 ---
 
 # symfony:symfony-messenger (Compact)

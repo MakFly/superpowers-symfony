@@ -1,6 +1,13 @@
 ---
 name: symfony:test-doubles-mocking
 description: Create test doubles with PHPUnit mocks and Prophecy for isolated unit testing in Symfony
+allowed-tools:
+  - Read
+  - Write
+  - Edit
+  - Bash
+  - Glob
+  - Grep
 ---
 
 # symfony:test-doubles-mocking (Compact)

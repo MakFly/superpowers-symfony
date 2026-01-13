@@ -1,6 +1,13 @@
 ---
 name: symfony:api-platform-serialization
 description: Control API output with serialization groups, custom normalizers, and context-aware serialization in API Platform
+allowed-tools:
+  - Read
+  - Write
+  - Edit
+  - Bash
+  - Glob
+  - Grep
 ---
 
 # symfony:api-platform-serialization (Compact)

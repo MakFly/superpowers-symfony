@@ -1,6 +1,13 @@
 ---
 name: symfony:rate-limiting
 description: Implement rate limiting with Symfony RateLimiter component; configure sliding window, token bucket, and fixed window algorithms
+allowed-tools:
+  - Read
+  - Write
+  - Edit
+  - Bash
+  - Glob
+  - Grep
 ---
 
 # symfony:rate-limiting (Compact)

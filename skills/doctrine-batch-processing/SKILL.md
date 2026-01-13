@@ -1,6 +1,13 @@
 ---
 name: symfony:doctrine-batch-processing
 description: Process large datasets efficiently with Doctrine batch processing, iteration, and memory management
+allowed-tools:
+  - Read
+  - Write
+  - Edit
+  - Bash
+  - Glob
+  - Grep
 ---
 
 # symfony:doctrine-batch-processing (Compact)

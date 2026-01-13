@@ -1,6 +1,13 @@
 ---
 name: symfony:quality-checks
 description: Run code quality tools including PHP-CS-Fixer for style, PHPStan for static analysis, and Psalm for type safety
+allowed-tools:
+  - Read
+  - Write
+  - Edit
+  - Bash
+  - Glob
+  - Grep
 ---
 
 # symfony:quality-checks (Compact)

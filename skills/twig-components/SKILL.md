@@ -1,6 +1,13 @@
 ---
 name: symfony:twig-components
 description: Build reusable UI components with Symfony UX Twig Components and Live Components for reactive interfaces
+allowed-tools:
+  - Read
+  - Write
+  - Edit
+  - Bash
+  - Glob
+  - Grep
 ---
 
 # symfony:twig-components (Compact)

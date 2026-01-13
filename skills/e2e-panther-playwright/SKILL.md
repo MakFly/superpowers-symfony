@@ -1,6 +1,13 @@
 ---
 name: symfony:e2e-panther-playwright
 description: Write end-to-end tests with Symfony Panther for browser automation or Playwright for complex scenarios
+allowed-tools:
+  - Read
+  - Write
+  - Edit
+  - Bash
+  - Glob
+  - Grep
 ---
 
 # symfony:e2e-panther-playwright (Compact)

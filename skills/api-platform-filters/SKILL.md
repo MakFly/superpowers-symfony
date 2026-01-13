@@ -1,6 +1,13 @@
 ---
 name: symfony:api-platform-filters
 description: Implement API Platform filters for search, date ranges, boolean, and custom filtering with proper indexing
+allowed-tools:
+  - Read
+  - Write
+  - Edit
+  - Bash
+  - Glob
+  - Grep
 ---
 
 # symfony:api-platform-filters (Compact)

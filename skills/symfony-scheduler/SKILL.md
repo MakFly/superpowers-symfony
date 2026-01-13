@@ -1,6 +1,13 @@
 ---
 name: symfony:symfony-scheduler
 description: Schedule recurring tasks with Symfony Scheduler component (7.1+); define schedules, triggers, and integrate with Messenger
+allowed-tools:
+  - Read
+  - Write
+  - Edit
+  - Bash
+  - Glob
+  - Grep
 ---
 
 # symfony:symfony-scheduler (Compact)

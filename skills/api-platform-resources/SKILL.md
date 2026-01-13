@@ -1,6 +1,13 @@
 ---
 name: symfony:api-platform-resources
 description: Configure API Platform resources with operations, pagination, and output DTOs for clean, versioned REST/GraphQL APIs
+allowed-tools:
+  - Read
+  - Write
+  - Edit
+  - Bash
+  - Glob
+  - Grep
 ---
 
 # symfony:api-platform-resources (Compact)

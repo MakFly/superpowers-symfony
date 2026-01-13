@@ -1,6 +1,13 @@
 ---
 name: symfony:api-platform-state-providers
 description: Master API Platform State Providers and Processors to decouple data retrieval and persistence from entities, enabling clean architecture and custom data sources
+allowed-tools:
+  - Read
+  - Write
+  - Edit
+  - Bash
+  - Glob
+  - Grep
 ---
 
 # symfony:api-platform-state-providers (Compact)
