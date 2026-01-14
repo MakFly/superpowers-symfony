@@ -1,10 +1,5 @@
 # Examples (Simple / Medium / Complex)
 
-## Simple
-- Tdd With Phpunit: basic setup and minimal flow
-
-## Medium
-- Tdd With Phpunit: auth + validation + basic caching
-
-## Complex
-- Tdd With Phpunit: multi-tenant + tags + async jobs
+- Simple: Tdd With Phpunit minimal flow
+- Medium: Tdd With Phpunit auth + validation
+- Complex: Tdd With Phpunit multi-tenant + async

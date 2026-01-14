@@ -19,8 +19,9 @@ description: Use when symfony api platform security
 - api-platform, security
 
 ## Rules
-- Ask before running servers/builds/tests; keep changes minimal
-
+- Keep changes minimal and focused
+- Ask before running servers/builds/tests
+- Load reference/examples only on explicit request
 ## References
 - `reference.md`
 - `examples.md`

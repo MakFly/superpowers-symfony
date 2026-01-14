@@ -16,8 +16,9 @@ description: Use when symfony doctrine fixtures foundry
 - Use when symfony doctrine fixtures foundry
 
 ## Rules
-- Ask before running servers/builds/tests; keep changes minimal
-
+- Keep changes minimal and focused
+- Ask before running servers/builds/tests
+- Load reference/examples only on explicit request
 ## References
 - `reference.md`
 - `examples.md`

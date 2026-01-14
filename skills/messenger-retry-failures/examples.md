@@ -1,10 +1,5 @@
 # Examples (Simple / Medium / Complex)
 
-## Simple
-- Messenger Retry Failures: basic setup and minimal flow
-
-## Medium
-- Messenger Retry Failures: auth + validation + basic caching
-
-## Complex
-- Messenger Retry Failures: multi-tenant + tags + async jobs
+- Simple: Messenger Retry Failures minimal flow
+- Medium: Messenger Retry Failures auth + validation
+- Complex: Messenger Retry Failures multi-tenant + async
