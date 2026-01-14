@@ -13,6 +13,8 @@ A Claude Code plugin providing Symfony-specific guidance, skills, and workflows.
 - **Quality** - PHP-CS-Fixer, PHPStan integration
 - **Docker Support** - Docker Compose standard + Symfony Docker (FrankenPHP)
 
+**Complexity tiers**: See `docs/complexity-tiers.md` for simple/medium/complex examples and how to adapt output.
+
 ## Installation
 
 ```bash
