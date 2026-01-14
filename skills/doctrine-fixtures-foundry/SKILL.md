@@ -1,6 +1,5 @@
 ---
 name: symfony:doctrine-fixtures-foundry
-description: Use when symfony doctrine fixtures foundry
 allowed-tools:
   - Read
   - Write
@@ -8,6 +7,7 @@ allowed-tools:
   - Bash
   - Glob
   - Grep
+description: Use when symfony doctrine fixtures foundry
 ---
 
 # symfony:doctrine-fixtures-foundry (Micro)
@@ -15,17 +15,12 @@ allowed-tools:
 ## Use when
 - Use when symfony doctrine fixtures foundry
 
-## Tags
-- doctrine
-
-## Do
-- Keep changes minimal and focused
-- Ask before running servers/builds/tests
-- Follow existing project conventions
-
-## Avoid
-- Unnecessary context expansion
-- Changing unrelated files
+## Rules
+- Ask before running servers/builds/tests; keep changes minimal
 
 ## References
-- `reference.md` for full details
+- `reference.md`
+- `examples.md`
+- `docs/complexity-tiers.md`
+- `docs/project-examples.md`
+- `docs/project-catalog.md`

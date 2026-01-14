@@ -1,10 +1,10 @@
 ---
 name: symfony:runner-selection
-description: Use when symfony runner selection
 allowed-tools:
   - Read
   - Glob
   - Grep
+description: Use when symfony runner selection
 ---
 
 # symfony:runner-selection (Micro)
@@ -12,14 +12,11 @@ allowed-tools:
 ## Use when
 - Use when symfony runner selection
 
-## Do
-- Keep changes minimal and focused
-- Ask before running servers/builds/tests
-- Follow existing project conventions
-
-## Avoid
-- Unnecessary context expansion
-- Changing unrelated files
+## Rules
+- Ask before running servers/builds/tests; keep changes minimal
 
 ## References
-- None
+- `examples.md`
+- `docs/complexity-tiers.md`
+- `docs/project-examples.md`
+- `docs/project-catalog.md`

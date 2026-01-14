@@ -1,6 +1,5 @@
 ---
 name: symfony:quality-checks
-description: Use when symfony quality checks
 allowed-tools:
   - Read
   - Write
@@ -8,6 +7,7 @@ allowed-tools:
   - Bash
   - Glob
   - Grep
+description: Use when symfony quality checks
 ---
 
 # symfony:quality-checks (Micro)
@@ -15,17 +15,12 @@ allowed-tools:
 ## Use when
 - Use when symfony quality checks
 
-## Tags
-- quality
-
-## Do
-- Keep changes minimal and focused
-- Ask before running servers/builds/tests
-- Follow existing project conventions
-
-## Avoid
-- Unnecessary context expansion
-- Changing unrelated files
+## Rules
+- Ask before running servers/builds/tests; keep changes minimal
 
 ## References
-- `reference.md` for full details
+- `reference.md`
+- `examples.md`
+- `docs/complexity-tiers.md`
+- `docs/project-examples.md`
+- `docs/project-catalog.md`

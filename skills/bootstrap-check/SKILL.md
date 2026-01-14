@@ -1,10 +1,10 @@
 ---
 name: symfony:bootstrap-check
-description: Use when symfony bootstrap check
 allowed-tools:
   - Read
   - Glob
   - Grep
+description: Use when symfony bootstrap check
 ---
 
 # symfony:bootstrap-check (Micro)
@@ -12,14 +12,12 @@ allowed-tools:
 ## Use when
 - Use when symfony bootstrap check
 
-## Do
-- Keep changes minimal and focused
-- Ask before running servers/builds/tests
-- Follow existing project conventions
-
-## Avoid
-- Unnecessary context expansion
-- Changing unrelated files
+## Rules
+- Ask before running servers/builds/tests; keep changes minimal
 
 ## References
-- `reference.md` for full details
+- `reference.md`
+- `examples.md`
+- `docs/complexity-tiers.md`
+- `docs/project-examples.md`
+- `docs/project-catalog.md`
