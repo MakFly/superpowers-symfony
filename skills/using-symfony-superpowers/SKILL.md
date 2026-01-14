@@ -17,7 +17,4 @@ description: Use when symfony using symfony superpowers
 - Ask before running servers/builds/tests
 - Load reference/examples only on explicit request
 ## References
-- `examples.md`
 - `docs/complexity-tiers.md`
-- `docs/project-examples.md`
-- `docs/project-catalog.md`
