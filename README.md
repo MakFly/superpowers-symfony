@@ -23,6 +23,39 @@ claude plugins install superpowers-symfony
 git clone https://github.com/MakFly/superpowers-symfony ~/.claude/plugins/superpowers-symfony
 ```
 
+### Enable plugin (Claude + GLM)
+
+```json
+// ~/.claude/settings.json
+{
+  "enabledPlugins": {
+    "superpowers-symfony@custom": true
+  }
+}
+```
+
+```json
+// ~/.claude-glm/.claude.json
+{
+  "enabledPlugins": {
+    "superpowers-symfony@custom": true
+  }
+}
+```
+
+Restart Claude Code.
+
+### Fallback: symlink skills (if plugin skills don’t load)
+
+```bash
+ln -s ~/.claude/plugins/superpowers-symfony/skills/doctrine-relations ~/.claude/skills/symfony-doctrine-relations
+```
+
+Then call:
+```
+Use the skill symfony:doctrine-relations
+```
+
 ## How to Use Skills
 
 Skills are markdown files containing expert knowledge about specific Symfony topics. Since this plugin uses a custom skill system (not Claude Code's native Skill tool), here are the different ways to use them.
