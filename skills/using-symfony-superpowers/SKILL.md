@@ -22,4 +22,4 @@ allowed-tools:
 - Changing unrelated files
 
 ## References
-- None
+- `docs/complexity-tiers.md` for simple/medium/complex examples
