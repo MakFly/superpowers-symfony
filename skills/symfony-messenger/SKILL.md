@@ -1,5 +1,4 @@
 ---
-
 name: symfony:symfony-messenger
 allowed-tools:
   - Read
@@ -8,36 +7,31 @@ allowed-tools:
   - Bash
   - Glob
   - Grep
-description: Apply production-grade Symfony practices for symfony messenger with focused implementation guidance and validation.
+description: Implement reliable Symfony Messenger command/event workflows with idempotent handlers, retry strategy, and failure transport design.
 ---
 
 # Symfony Messenger (Symfony)
 
 ## Use when
-- The task explicitly involves symfony messenger in a Symfony codebase.
-- You need targeted guidance with minimal detours.
+- Introducing async processing or decoupled command handling.
+- Stabilizing retries/failures in message-driven features.
 
 ## Default workflow
-1. Discover current constraints and existing patterns before editing.
-2. Implement the smallest change that satisfies the requested behavior.
-3. Validate with the strongest fast checks available in this repository.
-4. Summarize changed files, verification, and remaining risk.
+1. Define message contract and transport routing.
+2. Implement handler with idempotent side-effect design.
+3. Configure retry strategy, failure transport, and monitoring hooks.
+4. Separate transient vs permanent error handling.
+5. Add tests for dispatch, handler behavior, and failure scenarios.
 
 ## Guardrails
-- Keep changes minimal and focused on the active task.
-- Reuse project conventions over introducing new architecture.
-- Prefer deterministic checks over speculative changes.
-- If behavior is unclear, surface assumptions explicitly before broad refactors.
-
-## Progressive disclosure
-- Start with this file.
-- Load references only when needed for implementation details.
+- Never depend on exactly-once delivery semantics.
+- Keep handlers small and deterministic.
+- Include correlation identifiers for tracing.
 
 ## Output contract
-- What changed.
-- Why this approach was selected.
-- What was validated (command + outcome).
-- Any residual risk or follow-up.
+- Message/handler/routing updates.
+- Retry/failure policy decisions.
+- Validation outcomes and residual operational risk.
 
 ## References
 - `reference.md`

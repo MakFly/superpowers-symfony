@@ -1,5 +1,4 @@
 ---
-
 name: symfony:doctrine-migrations
 allowed-tools:
   - Read
@@ -8,36 +7,31 @@ allowed-tools:
   - Bash
   - Glob
   - Grep
-description: Apply production-grade Symfony practices for doctrine migrations with focused implementation guidance and validation.
+description: Produce safe Doctrine migrations with rollout strategy, backward compatibility, and operationally aware schema evolution.
 ---
 
 # Doctrine Migrations (Symfony)
 
 ## Use when
-- The task explicitly involves doctrine migrations in a Symfony codebase.
-- You need targeted guidance with minimal detours.
+- Evolving schema in non-trivial environments.
+- Needing additive-first rollout strategies.
 
 ## Default workflow
-1. Discover current constraints and existing patterns before editing.
-2. Implement the smallest change that satisfies the requested behavior.
-3. Validate with the strongest fast checks available in this repository.
-4. Summarize changed files, verification, and remaining risk.
+1. Plan additive and backward-compatible migration path.
+2. Generate migration and review SQL for lock/risk profile.
+3. Split schema and data migrations when needed.
+4. Validate migration up/down and release ordering.
+5. Document irreversible steps and mitigation.
 
 ## Guardrails
-- Keep changes minimal and focused on the active task.
-- Reuse project conventions over introducing new architecture.
-- Prefer deterministic checks over speculative changes.
-- If behavior is unclear, surface assumptions explicitly before broad refactors.
-
-## Progressive disclosure
-- Start with this file.
-- Load references only when needed for implementation details.
+- Avoid destructive changes in same release as read-path switch.
+- Review generated SQL before execution in critical DBs.
+- Keep migration names/descriptions domain-meaningful.
 
 ## Output contract
-- What changed.
-- Why this approach was selected.
-- What was validated (command + outcome).
-- Any residual risk or follow-up.
+- Migration strategy and files.
+- SQL/risk notes.
+- Validation and rollback posture.
 
 ## References
 - `reference.md`

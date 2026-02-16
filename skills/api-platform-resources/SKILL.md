@@ -1,5 +1,4 @@
 ---
-
 name: symfony:api-platform-resources
 allowed-tools:
   - Read
@@ -8,36 +7,31 @@ allowed-tools:
   - Bash
   - Glob
   - Grep
-description: Apply production-grade Symfony practices for api platform resources with focused implementation guidance and validation.
+description: Build stable API Platform resource contracts with explicit operations, serialization groups, validation, and security boundaries.
 ---
 
-# Api Platform Resources (Symfony)
+# API Platform Resources (Symfony)
 
 ## Use when
-- The task explicitly involves api platform resources in a Symfony codebase.
-- You need targeted guidance with minimal detours.
+- Creating or modifying API Platform resources/operations.
+- Aligning payload contract, security, and validation behavior.
 
 ## Default workflow
-1. Discover current constraints and existing patterns before editing.
-2. Implement the smallest change that satisfies the requested behavior.
-3. Validate with the strongest fast checks available in this repository.
-4. Summarize changed files, verification, and remaining risk.
+1. Define resource contract and operation set (collection/item/custom operations).
+2. Configure normalization/denormalization groups explicitly.
+3. Attach validation constraints and operation-specific security.
+4. Ensure provider/processor or controller boundaries are clean.
+5. Add functional tests per operation and status behavior.
 
 ## Guardrails
-- Keep changes minimal and focused on the active task.
-- Reuse project conventions over introducing new architecture.
-- Prefer deterministic checks over speculative changes.
-- If behavior is unclear, surface assumptions explicitly before broad refactors.
-
-## Progressive disclosure
-- Start with this file.
-- Load references only when needed for implementation details.
+- Avoid exposing internal entity fields by default.
+- Keep security expressions close to operations.
+- Version contract changes intentionally.
 
 ## Output contract
-- What changed.
-- Why this approach was selected.
-- What was validated (command + outcome).
-- Any residual risk or follow-up.
+- Resource/operation changes.
+- Serialization/security decisions.
+- Functional validation results.
 
 ## References
 - `reference.md`

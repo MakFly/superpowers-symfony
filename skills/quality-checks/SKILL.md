@@ -1,5 +1,4 @@
 ---
-
 name: symfony:quality-checks
 allowed-tools:
   - Read
@@ -8,36 +7,31 @@ allowed-tools:
   - Bash
   - Glob
   - Grep
-description: Run Symfony quality gates (lint/static analysis/tests) and report actionable failures with remediation order.
+description: Run Symfony quality gates (style, static analysis, tests) with deterministic sequencing and severity-prioritized remediation output.
 ---
 
 # Quality Checks (Symfony)
 
 ## Use when
-- The task explicitly involves quality checks in a Symfony codebase.
-- You need targeted guidance with minimal detours.
+- Before merge/release.
+- After cross-layer refactors.
 
 ## Default workflow
-1. Discover current constraints and existing patterns before editing.
-2. Implement the smallest change that satisfies the requested behavior.
-3. Validate with the strongest fast checks available in this repository.
-4. Summarize changed files, verification, and remaining risk.
+1. Detect canonical project scripts/wrappers.
+2. Run style/static gates before full tests.
+3. Execute targeted then full tests according to change scope.
+4. Classify findings by severity and confidence.
+5. Propose minimal remediation order.
 
 ## Guardrails
-- Keep changes minimal and focused on the active task.
-- Reuse project conventions over introducing new architecture.
-- Prefer deterministic checks over speculative changes.
-- If behavior is unclear, surface assumptions explicitly before broad refactors.
-
-## Progressive disclosure
-- Start with this file.
-- Load references only when needed for implementation details.
+- Preserve exact failing commands in report.
+- Separate code issues from environment/config drift.
+- Flag flaky tests explicitly.
 
 ## Output contract
-- What changed.
-- Why this approach was selected.
-- What was validated (command + outcome).
-- Any residual risk or follow-up.
+- Gate-by-gate status.
+- Blocking findings (ordered).
+- Suggested fix sequence.
 
 ## References
 - `reference.md`
