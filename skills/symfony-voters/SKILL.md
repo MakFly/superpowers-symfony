@@ -7,31 +7,34 @@ allowed-tools:
   - Bash
   - Glob
   - Grep
-description: Implement Symfony voters for consistent authorization decisions across controllers, API operations, and domain transitions.
+description: Strengthen Symfony authorization and validation boundaries with explicit, test-backed enforcement. Use for symfony voters tasks.
 ---
 
 # Symfony Voters (Symfony)
 
 ## Use when
-- Authorization rules are resource/action specific.
-- Access logic is duplicated or inconsistent across entry points.
+- Hardening access-control or validation boundaries.
+- Aligning voters/security expressions with domain rules.
 
 ## Default workflow
-1. Define subject/action matrix.
-2. Implement voter decision logic with explicit deny reasons where useful.
-3. Wire checks in controllers/API operations/security expressions.
-4. Add unit/functional tests for role/ownership/state combinations.
-5. Verify forbidden behavior and error contracts.
+1. Map actor/resource/action decision matrix.
+2. Implement voter/constraint logic at the right boundary.
+2. Wire checks at controllers and API operations.
+2. Test allowed/forbidden/invalid paths comprehensively.
 
 ## Guardrails
-- Keep auth decisions centralized in voters or dedicated policy services.
-- Do not embed access logic in templates/controllers ad hoc.
-- Cover ownership and state-transition permissions.
+- Avoid policy logic duplication across layers.
+- Do not leak privileged state via error detail.
+- Preserve explicit deny behavior for sensitive actions.
+
+## Progressive disclosure
+- Use this file for execution posture and risk controls.
+- Open references when deep implementation details are needed.
 
 ## Output contract
-- Voter logic changed.
-- Integration points using voter checks.
-- Test evidence for denied/allowed matrix.
+- Security boundary updates.
+- Integration points enforcing decisions.
+- Negative-path test results.
 
 ## References
 - `reference.md`

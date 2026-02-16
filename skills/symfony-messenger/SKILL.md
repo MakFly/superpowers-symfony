@@ -7,31 +7,34 @@ allowed-tools:
   - Bash
   - Glob
   - Grep
-description: Implement reliable Symfony Messenger command/event workflows with idempotent handlers, retry strategy, and failure transport design.
+description: Implement resilient Symfony async workflows with idempotency, retries, and operational visibility. Use for symfony messenger tasks.
 ---
 
 # Symfony Messenger (Symfony)
 
 ## Use when
-- Introducing async processing or decoupled command handling.
-- Stabilizing retries/failures in message-driven features.
+- Implementing asynchronous workflows with Messenger/Scheduler/Cache.
+- Stabilizing retries and failure transports.
 
 ## Default workflow
-1. Define message contract and transport routing.
-2. Implement handler with idempotent side-effect design.
-3. Configure retry strategy, failure transport, and monitoring hooks.
-4. Separate transient vs permanent error handling.
-5. Add tests for dispatch, handler behavior, and failure scenarios.
+1. Define async contract and delivery semantics.
+2. Implement idempotent handlers and routing strategy.
+2. Configure retries, failure transport, and observability.
+2. Validate success/failure replay scenarios.
 
 ## Guardrails
-- Never depend on exactly-once delivery semantics.
-- Keep handlers small and deterministic.
-- Include correlation identifiers for tracing.
+- Assume at-least-once delivery, not exactly-once.
+- Keep handlers deterministic and side-effect aware.
+- Surface poison-message handling strategy.
+
+## Progressive disclosure
+- Use this file for execution posture and risk controls.
+- Open references when deep implementation details are needed.
 
 ## Output contract
-- Message/handler/routing updates.
+- Async config/handlers updated.
 - Retry/failure policy decisions.
-- Validation outcomes and residual operational risk.
+- Operational validation evidence.
 
 ## References
 - `reference.md`

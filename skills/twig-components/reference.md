@@ -343,3 +343,22 @@ class ContactForm extends AbstractController
 4. **Debounce search**: Use `data-model="debounce(300)|query"`
 5. **URL sync**: Use `url: true` for bookmarkable state
 6. **Test components**: Unit test the PHP class
+
+
+## Skill Operating Checklist
+
+### Design checklist
+- Confirm operation boundaries and invariants first.
+- Minimize scope while preserving contract correctness.
+- Test both happy path and negative path behavior.
+
+### Validation commands
+- rg --files
+- composer validate
+- ./vendor/bin/phpstan analyse
+
+### Failure modes to test
+- Invalid payload or forbidden actor.
+- Boundary values / not-found cases.
+- Retry or partial-failure behavior for async flows.
+

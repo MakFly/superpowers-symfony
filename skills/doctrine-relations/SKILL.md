@@ -7,31 +7,34 @@ allowed-tools:
   - Bash
   - Glob
   - Grep
-description: Model Doctrine relations with correct ownership, cascades, fetch strategy, and schema integrity for production-safe Symfony domains.
+description: Evolve Symfony Doctrine models and schema safely with integrity, performance, and rollout discipline. Use for doctrine relations tasks.
 ---
 
 # Doctrine Relations (Symfony)
 
 ## Use when
-- Designing entity associations or fixing relation bugs.
-- Addressing N+1/performance issues tied to relation mapping.
+- Designing entity relations or schema evolution.
+- Improving Doctrine correctness/performance.
 
 ## Default workflow
-1. Identify true domain ownership and cardinality.
-2. Define owning/inverse sides and cascade/orphan rules explicitly.
-3. Validate DB-level constraints and indexes.
-4. Align fetch mode and query strategy with use cases.
-5. Add tests for relation lifecycle and persistence consistency.
+1. Model ownership/cardinality and transactional boundaries.
+2. Apply mapping/schema changes with migration safety.
+2. Tune fetch/query behavior for hot paths.
+2. Verify lifecycle behavior with targeted tests.
 
 ## Guardrails
-- Avoid broad cascade operations by default.
-- Keep relation collections consistent on both sides.
-- Prefer explicit joins over implicit lazy loading in hot paths.
+- Keep owning/inverse sides coherent.
+- Avoid destructive migration jumps in one release.
+- Eliminate accidental N+1 and over-fetching.
+
+## Progressive disclosure
+- Use this file for execution posture and risk controls.
+- Open references when deep implementation details are needed.
 
 ## Output contract
-- Mapping/schema changes.
-- Fetch strategy decisions.
-- Tests proving integrity.
+- Entity/migration changes.
+- Integrity and performance decisions.
+- Validation outcomes and rollback notes.
 
 ## References
 - `reference.md`

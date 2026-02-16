@@ -7,31 +7,34 @@ allowed-tools:
   - Bash
   - Glob
   - Grep
-description: Create robust Symfony functional tests for HTTP contracts, validation, authorization, and persistence side effects.
+description: Drive Symfony delivery with deterministic tests and strong regression protection. Use for functional tests tasks.
 ---
 
 # Functional Tests (Symfony)
 
 ## Use when
-- Validating real HTTP-level behavior end-to-end inside Symfony kernel.
-- Protecting API/controller contracts against regressions.
+- Building regression-safe behavior with TDD/functional/e2e tests.
+- Converting bug reports into executable failing tests.
 
 ## Default workflow
-1. Identify contract under test (status, payload, side effects).
-2. Build fixture setup for deterministic state.
-3. Execute request via test client and assert response contract.
-4. Assert persistence/async side effects where relevant.
-5. Cover unauthorized, invalid payload, and not-found branches.
+1. Write failing test for target behavior and one boundary case.
+2. Implement minimal code to pass.
+2. Refactor while preserving green suite.
+2. Broaden coverage for invalid/unauthorized/not-found paths.
 
 ## Guardrails
-- Keep tests deterministic and isolated.
-- Avoid over-mocking for functional layer.
-- Assert business-significant output, not incidental formatting.
+- Prefer deterministic fixtures/builders.
+- Assert observable behavior, not internal implementation.
+- Keep tests isolated and stable in CI.
+
+## Progressive disclosure
+- Use this file for execution posture and risk controls.
+- Open references when deep implementation details are needed.
 
 ## Output contract
-- Functional test cases added/updated.
-- Scenario matrix covered.
-- Command output and residual coverage gaps.
+- RED/GREEN/REFACTOR trace.
+- Test files changed and executed commands.
+- Coverage and confidence notes.
 
 ## References
 - `reference.md`

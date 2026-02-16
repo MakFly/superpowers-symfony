@@ -1,12 +1,22 @@
-# Voters Reference
+# Symfony Voters Reference (Symfony)
 
-## Decision dimensions
-- actor roles
-- ownership/tenant
-- resource state
-- requested action
+Use this reference for implementation details and review criteria specific to `symfony-voters`.
 
-## Tests
-- role matrix
-- ownership matrix
-- forbidden operation for invalid state
+
+## Skill Operating Checklist
+
+### Design checklist
+- Confirm operation boundaries and invariants first.
+- Minimize scope while preserving contract correctness.
+- Test both happy path and negative path behavior.
+
+### Validation commands
+- ./vendor/bin/phpunit --filter=Voter
+- php bin/console debug:container security
+- ./vendor/bin/phpstan analyse
+
+### Failure modes to test
+- Invalid payload or forbidden actor.
+- Boundary values / not-found cases.
+- Retry or partial-failure behavior for async flows.
+

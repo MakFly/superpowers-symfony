@@ -240,3 +240,22 @@ public function findForDisplay(): array
 5. **Use partial/DTO for lists**: Don't load full entities
 6. **Batch with iterable()**: For large dataset processing
 7. **Profile queries**: Use Symfony profiler to spot N+1
+
+
+## Skill Operating Checklist
+
+### Design checklist
+- Confirm operation boundaries and invariants first.
+- Minimize scope while preserving contract correctness.
+- Test both happy path and negative path behavior.
+
+### Validation commands
+- php bin/console doctrine:migrations:diff
+- php bin/console doctrine:migrations:migrate
+- ./vendor/bin/phpunit --filter=Doctrine
+
+### Failure modes to test
+- Invalid payload or forbidden actor.
+- Boundary values / not-found cases.
+- Retry or partial-failure behavior for async flows.
+

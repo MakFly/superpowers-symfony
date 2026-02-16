@@ -8,36 +8,34 @@ allowed-tools:
   - Bash
   - Glob
   - Grep
-description: Apply production-grade Symfony practices for form types validation with focused implementation guidance and validation.
+description: Strengthen Symfony authorization and validation boundaries with explicit, test-backed enforcement. Use for form types validation tasks.
 ---
 
 # Form Types Validation (Symfony)
 
 ## Use when
-- The task explicitly involves form types validation in a Symfony codebase.
-- You need targeted guidance with minimal detours.
+- Hardening access-control or validation boundaries.
+- Aligning voters/security expressions with domain rules.
 
 ## Default workflow
-1. Discover current constraints and existing patterns before editing.
-2. Implement the smallest change that satisfies the requested behavior.
-3. Validate with the strongest fast checks available in this repository.
-4. Summarize changed files, verification, and remaining risk.
+1. Map actor/resource/action decision matrix.
+2. Implement voter/constraint logic at the right boundary.
+2. Wire checks at controllers and API operations.
+2. Test allowed/forbidden/invalid paths comprehensively.
 
 ## Guardrails
-- Keep changes minimal and focused on the active task.
-- Reuse project conventions over introducing new architecture.
-- Prefer deterministic checks over speculative changes.
-- If behavior is unclear, surface assumptions explicitly before broad refactors.
+- Avoid policy logic duplication across layers.
+- Do not leak privileged state via error detail.
+- Preserve explicit deny behavior for sensitive actions.
 
 ## Progressive disclosure
-- Start with this file.
-- Load references only when needed for implementation details.
+- Use this file for execution posture and risk controls.
+- Open references when deep implementation details are needed.
 
 ## Output contract
-- What changed.
-- Why this approach was selected.
-- What was validated (command + outcome).
-- Any residual risk or follow-up.
+- Security boundary updates.
+- Integration points enforcing decisions.
+- Negative-path test results.
 
 ## References
 - `reference.md`

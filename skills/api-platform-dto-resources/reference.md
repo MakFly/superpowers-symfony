@@ -1,17 +1,22 @@
-# DTO Resources Reference
+# Api Platform Dto Resources Reference (Symfony)
 
-## Core pieces
-- Input DTO
-- Output DTO
-- Provider
-- Processor
+Use this reference for implementation details and review criteria specific to `api-platform-dto-resources`.
 
-## Mapping checklist
-- nullability handled
-- enum/value object conversion explicit
-- id/IRI handling consistent
 
-## Tests
-- DTO validation failures
-- provider mapping correctness
-- processor persistence behavior
+## Skill Operating Checklist
+
+### Design checklist
+- Confirm operation boundaries and invariants first.
+- Minimize scope while preserving contract correctness.
+- Test both happy path and negative path behavior.
+
+### Validation commands
+- ./vendor/bin/phpunit --filter=Api
+- ./vendor/bin/phpstan analyse
+- php bin/console debug:router
+
+### Failure modes to test
+- Invalid payload or forbidden actor.
+- Boundary values / not-found cases.
+- Retry or partial-failure behavior for async flows.
+

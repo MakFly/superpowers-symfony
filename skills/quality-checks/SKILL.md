@@ -7,31 +7,34 @@ allowed-tools:
   - Bash
   - Glob
   - Grep
-description: Run Symfony quality gates (style, static analysis, tests) with deterministic sequencing and severity-prioritized remediation output.
+description: Apply production-grade Symfony architecture and execution workflows with controlled scope and clear checkpoints. Use for quality checks tasks.
 ---
 
 # Quality Checks (Symfony)
 
 ## Use when
-- Before merge/release.
-- After cross-layer refactors.
+- Refining architecture/workflows/context handling in Symfony projects.
+- Planning and executing medium/complex changes safely.
 
 ## Default workflow
-1. Detect canonical project scripts/wrappers.
-2. Run style/static gates before full tests.
-3. Execute targeted then full tests according to change scope.
-4. Classify findings by severity and confidence.
-5. Propose minimal remediation order.
+1. Establish current boundaries, constraints, and coupling points.
+2. Propose smallest coherent architectural adjustment.
+2. Execute in checkpoints with validation at each stage.
+2. Summarize tradeoffs and follow-up backlog.
 
 ## Guardrails
-- Preserve exact failing commands in report.
-- Separate code issues from environment/config drift.
-- Flag flaky tests explicitly.
+- Use existing project patterns by default.
+- Avoid broad refactors without explicit need.
+- Keep decision log clear and auditable.
+
+## Progressive disclosure
+- Use this file for execution posture and risk controls.
+- Open references when deep implementation details are needed.
 
 ## Output contract
-- Gate-by-gate status.
-- Blocking findings (ordered).
-- Suggested fix sequence.
+- Architecture/workflow changes.
+- Checkpoint validation outcomes.
+- Residual risks and next steps.
 
 ## References
 - `reference.md`

@@ -8,36 +8,34 @@ allowed-tools:
   - Bash
   - Glob
   - Grep
-description: Apply production-grade Symfony practices for rate limiting with focused implementation guidance and validation.
+description: Implement resilient Symfony async workflows with idempotency, retries, and operational visibility. Use for rate limiting tasks.
 ---
 
 # Rate Limiting (Symfony)
 
 ## Use when
-- The task explicitly involves rate limiting in a Symfony codebase.
-- You need targeted guidance with minimal detours.
+- Implementing asynchronous workflows with Messenger/Scheduler/Cache.
+- Stabilizing retries and failure transports.
 
 ## Default workflow
-1. Discover current constraints and existing patterns before editing.
-2. Implement the smallest change that satisfies the requested behavior.
-3. Validate with the strongest fast checks available in this repository.
-4. Summarize changed files, verification, and remaining risk.
+1. Define async contract and delivery semantics.
+2. Implement idempotent handlers and routing strategy.
+2. Configure retries, failure transport, and observability.
+2. Validate success/failure replay scenarios.
 
 ## Guardrails
-- Keep changes minimal and focused on the active task.
-- Reuse project conventions over introducing new architecture.
-- Prefer deterministic checks over speculative changes.
-- If behavior is unclear, surface assumptions explicitly before broad refactors.
+- Assume at-least-once delivery, not exactly-once.
+- Keep handlers deterministic and side-effect aware.
+- Surface poison-message handling strategy.
 
 ## Progressive disclosure
-- Start with this file.
-- Load references only when needed for implementation details.
+- Use this file for execution posture and risk controls.
+- Open references when deep implementation details are needed.
 
 ## Output contract
-- What changed.
-- Why this approach was selected.
-- What was validated (command + outcome).
-- Any residual risk or follow-up.
+- Async config/handlers updated.
+- Retry/failure policy decisions.
+- Operational validation evidence.
 
 ## References
 - `reference.md`

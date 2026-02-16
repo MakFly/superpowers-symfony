@@ -369,3 +369,22 @@ class PaymentServiceTest extends TestCase
 4. **Iterator**: When checking all strategies
 5. **Priority**: Control evaluation order
 6. **Fallback**: Include a default strategy
+
+
+## Skill Operating Checklist
+
+### Design checklist
+- Confirm operation boundaries and invariants first.
+- Minimize scope while preserving contract correctness.
+- Test both happy path and negative path behavior.
+
+### Validation commands
+- rg --files
+- composer validate
+- ./vendor/bin/phpstan analyse
+
+### Failure modes to test
+- Invalid payload or forbidden actor.
+- Boundary values / not-found cases.
+- Retry or partial-failure behavior for async flows.
+

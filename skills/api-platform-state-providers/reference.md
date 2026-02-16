@@ -1,12 +1,22 @@
-# State Providers Reference
+# Api Platform State Providers Reference (Symfony)
 
-## Provider checklist
-- operation-bound provider registration
-- pagination support where needed
-- criteria scoped by current user/tenant
-- deterministic sort for stable paging
+Use this reference for implementation details and review criteria specific to `api-platform-state-providers`.
 
-## Performance checks
-- no lazy loading in hot path
-- indexes for filter/sort columns
-- bounded select fields where feasible
+
+## Skill Operating Checklist
+
+### Design checklist
+- Confirm operation boundaries and invariants first.
+- Minimize scope while preserving contract correctness.
+- Test both happy path and negative path behavior.
+
+### Validation commands
+- ./vendor/bin/phpunit --filter=Api
+- ./vendor/bin/phpstan analyse
+- php bin/console debug:router
+
+### Failure modes to test
+- Invalid payload or forbidden actor.
+- Boundary values / not-found cases.
+- Retry or partial-failure behavior for async flows.
+

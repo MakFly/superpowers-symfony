@@ -313,3 +313,22 @@ class Comment { /* ... */ }
 4. **Clear error messages** - help users understand
 5. **Test security** - verify both grant and deny cases
 6. **Audit sensitive operations** - log access attempts
+
+
+## Skill Operating Checklist
+
+### Design checklist
+- Confirm operation boundaries and invariants first.
+- Minimize scope while preserving contract correctness.
+- Test both happy path and negative path behavior.
+
+### Validation commands
+- ./vendor/bin/phpunit --filter=Api
+- ./vendor/bin/phpstan analyse
+- php bin/console debug:router
+
+### Failure modes to test
+- Invalid payload or forbidden actor.
+- Boundary values / not-found cases.
+- Retry or partial-failure behavior for async flows.
+

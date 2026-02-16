@@ -1,12 +1,22 @@
-# Doctrine Relations Reference
+# Doctrine Relations Reference (Symfony)
 
-## Checklist
-- owning side set correctly
-- nullable FK decision documented
-- on-delete behavior intentional
-- inverse synchronization in entity methods
+Use this reference for implementation details and review criteria specific to `doctrine-relations`.
 
-## Testing
-- persist/flush on both sides
-- deletion behavior
-- query behavior under eager/lazy strategies
+
+## Skill Operating Checklist
+
+### Design checklist
+- Confirm operation boundaries and invariants first.
+- Minimize scope while preserving contract correctness.
+- Test both happy path and negative path behavior.
+
+### Validation commands
+- php bin/console doctrine:migrations:diff
+- php bin/console doctrine:migrations:migrate
+- ./vendor/bin/phpunit --filter=Doctrine
+
+### Failure modes to test
+- Invalid payload or forbidden actor.
+- Boundary values / not-found cases.
+- Retry or partial-failure behavior for async flows.
+

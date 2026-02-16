@@ -7,31 +7,34 @@ allowed-tools:
   - Bash
   - Glob
   - Grep
-description: Implement performant API Platform State Providers with explicit query strategy, security-aware filtering, and predictable output mapping.
+description: Deliver robust API Platform contracts in Symfony with explicit operations, mapping, and policy-safe behavior. Use for api platform state providers tasks.
 ---
 
-# API Platform State Providers (Symfony)
+# Api Platform State Providers (Symfony)
 
 ## Use when
-- Read operations need custom query logic.
-- Default Doctrine provider is insufficient for performance or contract needs.
+- Designing or evolving API Platform contracts and operations.
+- Aligning serialization, validation, and security behavior.
 
 ## Default workflow
-1. Define read use case and output contract.
-2. Implement provider with explicit repository query strategy.
-3. Enforce user/tenant/security filtering in query path.
-4. Map query result to response DTO/resource consistently.
-5. Add functional tests for visibility, pagination, and edge conditions.
+1. Define operation-level contract and payload boundaries.
+2. Implement resource/DTO/provider/processor changes with explicit mapping.
+2. Apply operation-specific validation and security constraints.
+2. Validate functional behavior across happy and negative paths.
 
 ## Guardrails
-- Prevent over-fetching and N+1 by design.
-- Keep provider read-only; no write side effects.
-- Handle not-found and forbidden semantics explicitly.
+- Keep API contract explicit and version-aware.
+- Avoid exposing internal entity fields implicitly.
+- Prevent drift between docs and actual serialization.
+
+## Progressive disclosure
+- Use this file for execution posture and risk controls.
+- Open references when deep implementation details are needed.
 
 ## Output contract
-- Provider and query strategy changes.
-- Security/data visibility guarantees.
-- Test results for functional read paths.
+- API artifacts changed (resource/DTO/provider/processor).
+- Contract/security decisions and rationale.
+- Functional verification results.
 
 ## References
 - `reference.md`

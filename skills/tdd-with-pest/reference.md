@@ -249,3 +249,22 @@ expect($order)
 - Functional tests for HTTP, unit tests for services
 - Keep tests deterministic - no random delays
 - One assertion concept per test (can chain related expects)
+
+
+## Skill Operating Checklist
+
+### Design checklist
+- Confirm operation boundaries and invariants first.
+- Minimize scope while preserving contract correctness.
+- Test both happy path and negative path behavior.
+
+### Validation commands
+- ./vendor/bin/phpunit --filter=...
+- ./vendor/bin/phpunit
+- ./vendor/bin/pest --filter=...
+
+### Failure modes to test
+- Invalid payload or forbidden actor.
+- Boundary values / not-found cases.
+- Retry or partial-failure behavior for async flows.
+

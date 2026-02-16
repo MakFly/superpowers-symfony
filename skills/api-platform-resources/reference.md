@@ -1,13 +1,22 @@
-# API Platform Resources Reference
+# Api Platform Resources Reference (Symfony)
 
-## Resource checklist
-- operation list explicit
-- groups explicit
-- pagination/filtering intentional
-- consistent error format
+Use this reference for implementation details and review criteria specific to `api-platform-resources`.
 
-## Test matrix
-- GET collection/item
-- POST/PATCH invalid payload
-- unauthorized/forbidden scenarios
-- serialization group leakage checks
+
+## Skill Operating Checklist
+
+### Design checklist
+- Confirm operation boundaries and invariants first.
+- Minimize scope while preserving contract correctness.
+- Test both happy path and negative path behavior.
+
+### Validation commands
+- ./vendor/bin/phpunit --filter=Api
+- ./vendor/bin/phpstan analyse
+- php bin/console debug:router
+
+### Failure modes to test
+- Invalid payload or forbidden actor.
+- Boundary values / not-found cases.
+- Retry or partial-failure behavior for async flows.
+

@@ -8,36 +8,34 @@ allowed-tools:
   - Bash
   - Glob
   - Grep
-description: Apply production-grade Symfony practices for api platform filters with focused implementation guidance and validation.
+description: Deliver robust API Platform contracts in Symfony with explicit operations, mapping, and policy-safe behavior. Use for api platform filters tasks.
 ---
 
 # Api Platform Filters (Symfony)
 
 ## Use when
-- The task explicitly involves api platform filters in a Symfony codebase.
-- You need targeted guidance with minimal detours.
+- Designing or evolving API Platform contracts and operations.
+- Aligning serialization, validation, and security behavior.
 
 ## Default workflow
-1. Discover current constraints and existing patterns before editing.
-2. Implement the smallest change that satisfies the requested behavior.
-3. Validate with the strongest fast checks available in this repository.
-4. Summarize changed files, verification, and remaining risk.
+1. Define operation-level contract and payload boundaries.
+2. Implement resource/DTO/provider/processor changes with explicit mapping.
+2. Apply operation-specific validation and security constraints.
+2. Validate functional behavior across happy and negative paths.
 
 ## Guardrails
-- Keep changes minimal and focused on the active task.
-- Reuse project conventions over introducing new architecture.
-- Prefer deterministic checks over speculative changes.
-- If behavior is unclear, surface assumptions explicitly before broad refactors.
+- Keep API contract explicit and version-aware.
+- Avoid exposing internal entity fields implicitly.
+- Prevent drift between docs and actual serialization.
 
 ## Progressive disclosure
-- Start with this file.
-- Load references only when needed for implementation details.
+- Use this file for execution posture and risk controls.
+- Open references when deep implementation details are needed.
 
 ## Output contract
-- What changed.
-- Why this approach was selected.
-- What was validated (command + outcome).
-- Any residual risk or follow-up.
+- API artifacts changed (resource/DTO/provider/processor).
+- Contract/security decisions and rationale.
+- Functional verification results.
 
 ## References
 - `reference.md`

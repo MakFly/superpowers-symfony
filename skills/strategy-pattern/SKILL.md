@@ -5,36 +5,34 @@ allowed-tools:
   - Read
   - Glob
   - Grep
-description: Apply production-grade Symfony practices for strategy pattern with focused implementation guidance and validation.
+description: Apply production-grade Symfony architecture and execution workflows with controlled scope and clear checkpoints. Use for strategy pattern tasks.
 ---
 
 # Strategy Pattern (Symfony)
 
 ## Use when
-- The task explicitly involves strategy pattern in a Symfony codebase.
-- You need targeted guidance with minimal detours.
+- Refining architecture/workflows/context handling in Symfony projects.
+- Planning and executing medium/complex changes safely.
 
 ## Default workflow
-1. Discover current constraints and existing patterns before editing.
-2. Implement the smallest change that satisfies the requested behavior.
-3. Validate with the strongest fast checks available in this repository.
-4. Summarize changed files, verification, and remaining risk.
+1. Establish current boundaries, constraints, and coupling points.
+2. Propose smallest coherent architectural adjustment.
+2. Execute in checkpoints with validation at each stage.
+2. Summarize tradeoffs and follow-up backlog.
 
 ## Guardrails
-- Keep changes minimal and focused on the active task.
-- Reuse project conventions over introducing new architecture.
-- Prefer deterministic checks over speculative changes.
-- If behavior is unclear, surface assumptions explicitly before broad refactors.
+- Use existing project patterns by default.
+- Avoid broad refactors without explicit need.
+- Keep decision log clear and auditable.
 
 ## Progressive disclosure
-- Start with this file.
-- Load references only when needed for implementation details.
+- Use this file for execution posture and risk controls.
+- Open references when deep implementation details are needed.
 
 ## Output contract
-- What changed.
-- Why this approach was selected.
-- What was validated (command + outcome).
-- Any residual risk or follow-up.
+- Architecture/workflow changes.
+- Checkpoint validation outcomes.
+- Residual risks and next steps.
 
 ## References
 - `reference.md`

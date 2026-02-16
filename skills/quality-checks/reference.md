@@ -1,12 +1,22 @@
-# Symfony Quality Checks Reference
+# Quality Checks Reference (Symfony)
 
-## Preferred sequence
-1. `./vendor/bin/php-cs-fixer fix --dry-run --diff`
-2. `./vendor/bin/phpstan analyse`
-3. `./vendor/bin/phpunit` (or pest if project uses it)
+Use this reference for implementation details and review criteria specific to `quality-checks`.
 
-## Report
-- command
-- pass/fail
-- top failing artifact
-- first remediation step
+
+## Skill Operating Checklist
+
+### Design checklist
+- Confirm operation boundaries and invariants first.
+- Minimize scope while preserving contract correctness.
+- Test both happy path and negative path behavior.
+
+### Validation commands
+- rg --files
+- composer validate
+- ./vendor/bin/phpstan analyse
+
+### Failure modes to test
+- Invalid payload or forbidden actor.
+- Boundary values / not-found cases.
+- Retry or partial-failure behavior for async flows.
+

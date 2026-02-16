@@ -7,31 +7,34 @@ allowed-tools:
   - Bash
   - Glob
   - Grep
-description: Build stable API Platform resource contracts with explicit operations, serialization groups, validation, and security boundaries.
+description: Deliver robust API Platform contracts in Symfony with explicit operations, mapping, and policy-safe behavior. Use for api platform resources tasks.
 ---
 
-# API Platform Resources (Symfony)
+# Api Platform Resources (Symfony)
 
 ## Use when
-- Creating or modifying API Platform resources/operations.
-- Aligning payload contract, security, and validation behavior.
+- Designing or evolving API Platform contracts and operations.
+- Aligning serialization, validation, and security behavior.
 
 ## Default workflow
-1. Define resource contract and operation set (collection/item/custom operations).
-2. Configure normalization/denormalization groups explicitly.
-3. Attach validation constraints and operation-specific security.
-4. Ensure provider/processor or controller boundaries are clean.
-5. Add functional tests per operation and status behavior.
+1. Define operation-level contract and payload boundaries.
+2. Implement resource/DTO/provider/processor changes with explicit mapping.
+2. Apply operation-specific validation and security constraints.
+2. Validate functional behavior across happy and negative paths.
 
 ## Guardrails
-- Avoid exposing internal entity fields by default.
-- Keep security expressions close to operations.
-- Version contract changes intentionally.
+- Keep API contract explicit and version-aware.
+- Avoid exposing internal entity fields implicitly.
+- Prevent drift between docs and actual serialization.
+
+## Progressive disclosure
+- Use this file for execution posture and risk controls.
+- Open references when deep implementation details are needed.
 
 ## Output contract
-- Resource/operation changes.
-- Serialization/security decisions.
-- Functional validation results.
+- API artifacts changed (resource/DTO/provider/processor).
+- Contract/security decisions and rationale.
+- Functional verification results.
 
 ## References
 - `reference.md`

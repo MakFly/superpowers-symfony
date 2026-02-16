@@ -14,3 +14,12 @@ This repository's skills now follow a shared structure aligned with Claude Code 
 - Put deep technical detail in `reference.md`.
 - Prefer concrete validation commands over vague checks.
 - Update both `description` and references when a skill's scope changes.
+
+## Content QA (v3)
+
+Run:
+
+`npx tsx scripts/validate_skills.ts`
+`npx tsx scripts/lint_skill_content.ts`
+
+This keeps skill structure consistent and descriptions non-generic.

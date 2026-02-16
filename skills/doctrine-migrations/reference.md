@@ -1,12 +1,22 @@
-# Doctrine Migrations Reference
+# Doctrine Migrations Reference (Symfony)
 
-## Command set
-- `php bin/console doctrine:migrations:diff`
-- `php bin/console doctrine:migrations:migrate`
-- `php bin/console doctrine:migrations:execute --down <Version>`
+Use this reference for implementation details and review criteria specific to `doctrine-migrations`.
 
-## Safe rollout model
-1. additive schema
-2. dual-write/read transition if needed
-3. data backfill
-4. cleanup migration later
+
+## Skill Operating Checklist
+
+### Design checklist
+- Confirm operation boundaries and invariants first.
+- Minimize scope while preserving contract correctness.
+- Test both happy path and negative path behavior.
+
+### Validation commands
+- php bin/console doctrine:migrations:diff
+- php bin/console doctrine:migrations:migrate
+- ./vendor/bin/phpunit --filter=Doctrine
+
+### Failure modes to test
+- Invalid payload or forbidden actor.
+- Boundary values / not-found cases.
+- Retry or partial-failure behavior for async flows.
+

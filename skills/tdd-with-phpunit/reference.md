@@ -1,16 +1,22 @@
-# PHPUnit TDD Reference
+# Tdd With Phpunit Reference (Symfony)
 
-## Cycle
-- RED: failing test
-- GREEN: minimal pass
-- REFACTOR: cleanup
+Use this reference for implementation details and review criteria specific to `tdd-with-phpunit`.
 
-## Commands
-- `./vendor/bin/phpunit tests/...`
-- `./vendor/bin/phpunit --filter=...`
-- `./vendor/bin/phpunit`
 
-## Coverage focus
-- happy path
-- boundary values
-- invalid/unauthorized paths
+## Skill Operating Checklist
+
+### Design checklist
+- Confirm operation boundaries and invariants first.
+- Minimize scope while preserving contract correctness.
+- Test both happy path and negative path behavior.
+
+### Validation commands
+- ./vendor/bin/phpunit --filter=...
+- ./vendor/bin/phpunit
+- ./vendor/bin/pest --filter=...
+
+### Failure modes to test
+- Invalid payload or forbidden actor.
+- Boundary values / not-found cases.
+- Retry or partial-failure behavior for async flows.
+

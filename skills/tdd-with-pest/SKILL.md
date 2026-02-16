@@ -8,36 +8,34 @@ allowed-tools:
   - Bash
   - Glob
   - Grep
-description: Apply RED-GREEN-REFACTOR with Pest in Symfony, producing minimal safe implementation and strong tests.
+description: Drive Symfony delivery with deterministic tests and strong regression protection. Use for tdd with pest tasks.
 ---
 
 # Tdd With Pest (Symfony)
 
 ## Use when
-- The task explicitly involves tdd with pest in a Symfony codebase.
-- You need targeted guidance with minimal detours.
+- Building regression-safe behavior with TDD/functional/e2e tests.
+- Converting bug reports into executable failing tests.
 
 ## Default workflow
-1. Discover current constraints and existing patterns before editing.
-2. Implement the smallest change that satisfies the requested behavior.
-3. Validate with the strongest fast checks available in this repository.
-4. Summarize changed files, verification, and remaining risk.
+1. Write failing test for target behavior and one boundary case.
+2. Implement minimal code to pass.
+2. Refactor while preserving green suite.
+2. Broaden coverage for invalid/unauthorized/not-found paths.
 
 ## Guardrails
-- Keep changes minimal and focused on the active task.
-- Reuse project conventions over introducing new architecture.
-- Prefer deterministic checks over speculative changes.
-- If behavior is unclear, surface assumptions explicitly before broad refactors.
+- Prefer deterministic fixtures/builders.
+- Assert observable behavior, not internal implementation.
+- Keep tests isolated and stable in CI.
 
 ## Progressive disclosure
-- Start with this file.
-- Load references only when needed for implementation details.
+- Use this file for execution posture and risk controls.
+- Open references when deep implementation details are needed.
 
 ## Output contract
-- What changed.
-- Why this approach was selected.
-- What was validated (command + outcome).
-- Any residual risk or follow-up.
+- RED/GREEN/REFACTOR trace.
+- Test files changed and executed commands.
+- Coverage and confidence notes.
 
 ## References
 - `reference.md`

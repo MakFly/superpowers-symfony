@@ -7,31 +7,34 @@ allowed-tools:
   - Bash
   - Glob
   - Grep
-description: Implement DTO-first API Platform resources (input/output DTOs, providers, processors) to decouple HTTP contracts from persistence models.
+description: Deliver robust API Platform contracts in Symfony with explicit operations, mapping, and policy-safe behavior. Use for api platform dto resources tasks.
 ---
 
-# API Platform DTO Resources (Symfony)
+# Api Platform Dto Resources (Symfony)
 
 ## Use when
-- API shape diverges from Doctrine entities.
-- Strong boundary between domain and transport is required.
+- Designing or evolving API Platform contracts and operations.
+- Aligning serialization, validation, and security behavior.
 
 ## Default workflow
-1. Define input/output DTO contracts first.
-2. Implement Provider (entity -> output DTO) for read paths.
-3. Implement Processor (input DTO -> domain/persistence) for write paths.
-4. Keep mapping explicit and testable.
-5. Add functional + unit tests for DTO mapping and operation behavior.
+1. Define operation-level contract and payload boundaries.
+2. Implement resource/DTO/provider/processor changes with explicit mapping.
+2. Apply operation-specific validation and security constraints.
+2. Validate functional behavior across happy and negative paths.
 
 ## Guardrails
-- Do not leak entities directly when DTO boundary is chosen.
-- Keep mapping logic centralized, not spread across controllers.
-- Validate DTOs with explicit constraints.
+- Keep API contract explicit and version-aware.
+- Avoid exposing internal entity fields implicitly.
+- Prevent drift between docs and actual serialization.
+
+## Progressive disclosure
+- Use this file for execution posture and risk controls.
+- Open references when deep implementation details are needed.
 
 ## Output contract
-- DTO/provider/processor artifacts changed.
-- Mapping decisions and invariants.
-- Verification and open risks.
+- API artifacts changed (resource/DTO/provider/processor).
+- Contract/security decisions and rationale.
+- Functional verification results.
 
 ## References
 - `reference.md`

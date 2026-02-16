@@ -7,31 +7,34 @@ allowed-tools:
   - Bash
   - Glob
   - Grep
-description: Apply strict RED-GREEN-REFACTOR with PHPUnit in Symfony, emphasizing deterministic tests and behavior-first design.
+description: Drive Symfony delivery with deterministic tests and strong regression protection. Use for tdd with phpunit tasks.
 ---
 
-# TDD with PHPUnit (Symfony)
+# Tdd With Phpunit (Symfony)
 
 ## Use when
-- Implementing domain/services/controllers with high regression risk.
-- Reproducing and fixing bugs through executable specs.
+- Building regression-safe behavior with TDD/functional/e2e tests.
+- Converting bug reports into executable failing tests.
 
 ## Default workflow
-1. Write failing PHPUnit test for target behavior.
-2. Implement minimum code to pass.
-3. Refactor structure while preserving behavior.
-4. Expand tests for edge and negative cases.
-5. Run focused then full suite.
+1. Write failing test for target behavior and one boundary case.
+2. Implement minimal code to pass.
+2. Refactor while preserving green suite.
+2. Broaden coverage for invalid/unauthorized/not-found paths.
 
 ## Guardrails
-- Avoid brittle assertions on internals.
-- Keep test setup explicit and isolated.
-- Use fixtures/builders consistently.
+- Prefer deterministic fixtures/builders.
+- Assert observable behavior, not internal implementation.
+- Keep tests isolated and stable in CI.
+
+## Progressive disclosure
+- Use this file for execution posture and risk controls.
+- Open references when deep implementation details are needed.
 
 ## Output contract
-- RED test case.
-- GREEN implementation.
-- REFACTOR summary and final check output.
+- RED/GREEN/REFACTOR trace.
+- Test files changed and executed commands.
+- Coverage and confidence notes.
 
 ## References
 - `reference.md`

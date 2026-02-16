@@ -381,3 +381,22 @@ class OrderReadRepository
 4. **Validation in commands**: Use Symfony Validator
 5. **Read models for complex queries**: Optimize separately
 6. **Transaction on commands**: Wrap in database transaction
+
+
+## Skill Operating Checklist
+
+### Design checklist
+- Confirm operation boundaries and invariants first.
+- Minimize scope while preserving contract correctness.
+- Test both happy path and negative path behavior.
+
+### Validation commands
+- rg --files
+- composer validate
+- ./vendor/bin/phpstan analyse
+
+### Failure modes to test
+- Invalid payload or forbidden actor.
+- Boundary values / not-found cases.
+- Retry or partial-failure behavior for async flows.
+

@@ -1,13 +1,22 @@
-# Functional Tests Reference
+# Functional Tests Reference (Symfony)
 
-## Scenario matrix
-- success flow
-- validation error
-- unauthorized/forbidden
-- resource not found
+Use this reference for implementation details and review criteria specific to `functional-tests`.
 
-## Assertions
-- status code
-- JSON contract/headers
-- DB side effects
-- emitted messages/events when relevant
+
+## Skill Operating Checklist
+
+### Design checklist
+- Confirm operation boundaries and invariants first.
+- Minimize scope while preserving contract correctness.
+- Test both happy path and negative path behavior.
+
+### Validation commands
+- ./vendor/bin/phpunit --filter=...
+- ./vendor/bin/phpunit
+- ./vendor/bin/pest --filter=...
+
+### Failure modes to test
+- Invalid payload or forbidden actor.
+- Boundary values / not-found cases.
+- Retry or partial-failure behavior for async flows.
+
