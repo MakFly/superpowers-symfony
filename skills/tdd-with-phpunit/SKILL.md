@@ -1,5 +1,4 @@
 ---
-
 name: symfony:tdd-with-phpunit
 allowed-tools:
   - Read
@@ -8,36 +7,31 @@ allowed-tools:
   - Bash
   - Glob
   - Grep
-description: Apply RED-GREEN-REFACTOR with PHPUnit in Symfony, focusing on deterministic, maintainable test coverage.
+description: Apply strict RED-GREEN-REFACTOR with PHPUnit in Symfony, emphasizing deterministic tests and behavior-first design.
 ---
 
-# Tdd With Phpunit (Symfony)
+# TDD with PHPUnit (Symfony)
 
 ## Use when
-- The task explicitly involves tdd with phpunit in a Symfony codebase.
-- You need targeted guidance with minimal detours.
+- Implementing domain/services/controllers with high regression risk.
+- Reproducing and fixing bugs through executable specs.
 
 ## Default workflow
-1. Discover current constraints and existing patterns before editing.
-2. Implement the smallest change that satisfies the requested behavior.
-3. Validate with the strongest fast checks available in this repository.
-4. Summarize changed files, verification, and remaining risk.
+1. Write failing PHPUnit test for target behavior.
+2. Implement minimum code to pass.
+3. Refactor structure while preserving behavior.
+4. Expand tests for edge and negative cases.
+5. Run focused then full suite.
 
 ## Guardrails
-- Keep changes minimal and focused on the active task.
-- Reuse project conventions over introducing new architecture.
-- Prefer deterministic checks over speculative changes.
-- If behavior is unclear, surface assumptions explicitly before broad refactors.
-
-## Progressive disclosure
-- Start with this file.
-- Load references only when needed for implementation details.
+- Avoid brittle assertions on internals.
+- Keep test setup explicit and isolated.
+- Use fixtures/builders consistently.
 
 ## Output contract
-- What changed.
-- Why this approach was selected.
-- What was validated (command + outcome).
-- Any residual risk or follow-up.
+- RED test case.
+- GREEN implementation.
+- REFACTOR summary and final check output.
 
 ## References
 - `reference.md`

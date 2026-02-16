@@ -1,5 +1,4 @@
 ---
-
 name: symfony:api-platform-state-providers
 allowed-tools:
   - Read
@@ -8,36 +7,31 @@ allowed-tools:
   - Bash
   - Glob
   - Grep
-description: Apply production-grade Symfony practices for api platform state providers with focused implementation guidance and validation.
+description: Implement performant API Platform State Providers with explicit query strategy, security-aware filtering, and predictable output mapping.
 ---
 
-# Api Platform State Providers (Symfony)
+# API Platform State Providers (Symfony)
 
 ## Use when
-- The task explicitly involves api platform state providers in a Symfony codebase.
-- You need targeted guidance with minimal detours.
+- Read operations need custom query logic.
+- Default Doctrine provider is insufficient for performance or contract needs.
 
 ## Default workflow
-1. Discover current constraints and existing patterns before editing.
-2. Implement the smallest change that satisfies the requested behavior.
-3. Validate with the strongest fast checks available in this repository.
-4. Summarize changed files, verification, and remaining risk.
+1. Define read use case and output contract.
+2. Implement provider with explicit repository query strategy.
+3. Enforce user/tenant/security filtering in query path.
+4. Map query result to response DTO/resource consistently.
+5. Add functional tests for visibility, pagination, and edge conditions.
 
 ## Guardrails
-- Keep changes minimal and focused on the active task.
-- Reuse project conventions over introducing new architecture.
-- Prefer deterministic checks over speculative changes.
-- If behavior is unclear, surface assumptions explicitly before broad refactors.
-
-## Progressive disclosure
-- Start with this file.
-- Load references only when needed for implementation details.
+- Prevent over-fetching and N+1 by design.
+- Keep provider read-only; no write side effects.
+- Handle not-found and forbidden semantics explicitly.
 
 ## Output contract
-- What changed.
-- Why this approach was selected.
-- What was validated (command + outcome).
-- Any residual risk or follow-up.
+- Provider and query strategy changes.
+- Security/data visibility guarantees.
+- Test results for functional read paths.
 
 ## References
 - `reference.md`

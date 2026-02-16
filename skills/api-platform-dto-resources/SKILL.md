@@ -1,5 +1,4 @@
 ---
-
 name: symfony:api-platform-dto-resources
 allowed-tools:
   - Read
@@ -8,36 +7,31 @@ allowed-tools:
   - Bash
   - Glob
   - Grep
-description: Apply production-grade Symfony practices for api platform dto resources with focused implementation guidance and validation.
+description: Implement DTO-first API Platform resources (input/output DTOs, providers, processors) to decouple HTTP contracts from persistence models.
 ---
 
-# Api Platform Dto Resources (Symfony)
+# API Platform DTO Resources (Symfony)
 
 ## Use when
-- The task explicitly involves api platform dto resources in a Symfony codebase.
-- You need targeted guidance with minimal detours.
+- API shape diverges from Doctrine entities.
+- Strong boundary between domain and transport is required.
 
 ## Default workflow
-1. Discover current constraints and existing patterns before editing.
-2. Implement the smallest change that satisfies the requested behavior.
-3. Validate with the strongest fast checks available in this repository.
-4. Summarize changed files, verification, and remaining risk.
+1. Define input/output DTO contracts first.
+2. Implement Provider (entity -> output DTO) for read paths.
+3. Implement Processor (input DTO -> domain/persistence) for write paths.
+4. Keep mapping explicit and testable.
+5. Add functional + unit tests for DTO mapping and operation behavior.
 
 ## Guardrails
-- Keep changes minimal and focused on the active task.
-- Reuse project conventions over introducing new architecture.
-- Prefer deterministic checks over speculative changes.
-- If behavior is unclear, surface assumptions explicitly before broad refactors.
-
-## Progressive disclosure
-- Start with this file.
-- Load references only when needed for implementation details.
+- Do not leak entities directly when DTO boundary is chosen.
+- Keep mapping logic centralized, not spread across controllers.
+- Validate DTOs with explicit constraints.
 
 ## Output contract
-- What changed.
-- Why this approach was selected.
-- What was validated (command + outcome).
-- Any residual risk or follow-up.
+- DTO/provider/processor artifacts changed.
+- Mapping decisions and invariants.
+- Verification and open risks.
 
 ## References
 - `reference.md`

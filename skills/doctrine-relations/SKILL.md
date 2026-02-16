@@ -1,5 +1,4 @@
 ---
-
 name: symfony:doctrine-relations
 allowed-tools:
   - Read
@@ -8,36 +7,31 @@ allowed-tools:
   - Bash
   - Glob
   - Grep
-description: Apply production-grade Symfony practices for doctrine relations with focused implementation guidance and validation.
+description: Model Doctrine relations with correct ownership, cascades, fetch strategy, and schema integrity for production-safe Symfony domains.
 ---
 
 # Doctrine Relations (Symfony)
 
 ## Use when
-- The task explicitly involves doctrine relations in a Symfony codebase.
-- You need targeted guidance with minimal detours.
+- Designing entity associations or fixing relation bugs.
+- Addressing N+1/performance issues tied to relation mapping.
 
 ## Default workflow
-1. Discover current constraints and existing patterns before editing.
-2. Implement the smallest change that satisfies the requested behavior.
-3. Validate with the strongest fast checks available in this repository.
-4. Summarize changed files, verification, and remaining risk.
+1. Identify true domain ownership and cardinality.
+2. Define owning/inverse sides and cascade/orphan rules explicitly.
+3. Validate DB-level constraints and indexes.
+4. Align fetch mode and query strategy with use cases.
+5. Add tests for relation lifecycle and persistence consistency.
 
 ## Guardrails
-- Keep changes minimal and focused on the active task.
-- Reuse project conventions over introducing new architecture.
-- Prefer deterministic checks over speculative changes.
-- If behavior is unclear, surface assumptions explicitly before broad refactors.
-
-## Progressive disclosure
-- Start with this file.
-- Load references only when needed for implementation details.
+- Avoid broad cascade operations by default.
+- Keep relation collections consistent on both sides.
+- Prefer explicit joins over implicit lazy loading in hot paths.
 
 ## Output contract
-- What changed.
-- Why this approach was selected.
-- What was validated (command + outcome).
-- Any residual risk or follow-up.
+- Mapping/schema changes.
+- Fetch strategy decisions.
+- Tests proving integrity.
 
 ## References
 - `reference.md`

@@ -1,5 +1,4 @@
 ---
-
 name: symfony:symfony-voters
 allowed-tools:
   - Read
@@ -8,36 +7,31 @@ allowed-tools:
   - Bash
   - Glob
   - Grep
-description: Apply production-grade Symfony practices for symfony voters with focused implementation guidance and validation.
+description: Implement Symfony voters for consistent authorization decisions across controllers, API operations, and domain transitions.
 ---
 
 # Symfony Voters (Symfony)
 
 ## Use when
-- The task explicitly involves symfony voters in a Symfony codebase.
-- You need targeted guidance with minimal detours.
+- Authorization rules are resource/action specific.
+- Access logic is duplicated or inconsistent across entry points.
 
 ## Default workflow
-1. Discover current constraints and existing patterns before editing.
-2. Implement the smallest change that satisfies the requested behavior.
-3. Validate with the strongest fast checks available in this repository.
-4. Summarize changed files, verification, and remaining risk.
+1. Define subject/action matrix.
+2. Implement voter decision logic with explicit deny reasons where useful.
+3. Wire checks in controllers/API operations/security expressions.
+4. Add unit/functional tests for role/ownership/state combinations.
+5. Verify forbidden behavior and error contracts.
 
 ## Guardrails
-- Keep changes minimal and focused on the active task.
-- Reuse project conventions over introducing new architecture.
-- Prefer deterministic checks over speculative changes.
-- If behavior is unclear, surface assumptions explicitly before broad refactors.
-
-## Progressive disclosure
-- Start with this file.
-- Load references only when needed for implementation details.
+- Keep auth decisions centralized in voters or dedicated policy services.
+- Do not embed access logic in templates/controllers ad hoc.
+- Cover ownership and state-transition permissions.
 
 ## Output contract
-- What changed.
-- Why this approach was selected.
-- What was validated (command + outcome).
-- Any residual risk or follow-up.
+- Voter logic changed.
+- Integration points using voter checks.
+- Test evidence for denied/allowed matrix.
 
 ## References
 - `reference.md`

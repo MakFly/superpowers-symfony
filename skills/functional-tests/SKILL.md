@@ -1,40 +1,37 @@
 ---
-
 name: symfony:functional-tests
 allowed-tools:
   - Read
+  - Write
+  - Edit
+  - Bash
   - Glob
   - Grep
-description: Apply production-grade Symfony practices for functional tests with focused implementation guidance and validation.
+description: Create robust Symfony functional tests for HTTP contracts, validation, authorization, and persistence side effects.
 ---
 
 # Functional Tests (Symfony)
 
 ## Use when
-- The task explicitly involves functional tests in a Symfony codebase.
-- You need targeted guidance with minimal detours.
+- Validating real HTTP-level behavior end-to-end inside Symfony kernel.
+- Protecting API/controller contracts against regressions.
 
 ## Default workflow
-1. Discover current constraints and existing patterns before editing.
-2. Implement the smallest change that satisfies the requested behavior.
-3. Validate with the strongest fast checks available in this repository.
-4. Summarize changed files, verification, and remaining risk.
+1. Identify contract under test (status, payload, side effects).
+2. Build fixture setup for deterministic state.
+3. Execute request via test client and assert response contract.
+4. Assert persistence/async side effects where relevant.
+5. Cover unauthorized, invalid payload, and not-found branches.
 
 ## Guardrails
-- Keep changes minimal and focused on the active task.
-- Reuse project conventions over introducing new architecture.
-- Prefer deterministic checks over speculative changes.
-- If behavior is unclear, surface assumptions explicitly before broad refactors.
-
-## Progressive disclosure
-- Start with this file.
-- Load references only when needed for implementation details.
+- Keep tests deterministic and isolated.
+- Avoid over-mocking for functional layer.
+- Assert business-significant output, not incidental formatting.
 
 ## Output contract
-- What changed.
-- Why this approach was selected.
-- What was validated (command + outcome).
-- Any residual risk or follow-up.
+- Functional test cases added/updated.
+- Scenario matrix covered.
+- Command output and residual coverage gaps.
 
 ## References
 - `reference.md`
