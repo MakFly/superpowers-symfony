@@ -7,7 +7,12 @@ allowed-tools:
   - Bash
   - Glob
   - Grep
-description: Drive Symfony delivery with deterministic tests and strong regression protection. Use for functional tests tasks.
+description: >
+  Write and maintain Symfony functional tests using WebTestCase and TDD (RED/GREEN/REFACTOR).
+  Converts bug reports into failing tests, builds regression-safe behavior,
+  and validates HTTP responses, form submissions, and authorization flows.
+  Use when the user asks to write functional tests, add test coverage, convert
+  a bug into a test, or set up TDD workflow for Symfony controllers and endpoints.
 ---
 
 # Functional Tests (Symfony)
