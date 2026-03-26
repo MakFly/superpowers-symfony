@@ -1,6 +1,5 @@
 {
   "name": "superpowers-symfony",
-  "version": "0.1.0",
   "description": "A Symfony-focused toolkit for Claude Code providing TDD (Pest/PHPUnit), Doctrine ORM, API Platform, Messenger, Voters, quality checks (PHP-CS-Fixer/PHPStan), and pragmatic architecture patterns - Docker Compose and Symfony Docker (FrankenPHP) compatible",
   "author": {
     "name": "MakFly"

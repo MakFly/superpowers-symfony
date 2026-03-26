@@ -1,21 +1,44 @@
 {
   "name": "superpowers-symfony",
   "owner": {
-    "name": "MakFly"
+    "name": "MakFly",
+    "email": "contact@devaubree.fr"
   },
   "metadata": {
-    "description": "A Claude Code plugin providing Symfony-specific guidance, skills, and workflows.",
+    "description": "A Claude Code plugin providing Symfony-specific guidance, skills, and workflows for TDD, Doctrine, API Platform, Messenger, and more.",
     "version": "0.1.0"
   },
   "plugins": [
     {
       "name": "superpowers-symfony",
       "source": "./",
-      "repository": "https://github.com/MakFly/superpowers-symfony",
-      "description": "Symfony-specific Claude Code workflows",
+      "description": "Symfony-focused toolkit for Claude Code: TDD (Pest/PHPUnit), Doctrine ORM, API Platform, Messenger, Voters, quality checks, and architecture patterns",
       "version": "0.1.0",
-      "skills": "./skills/",
-      "commands": "./commands/"
+      "author": {
+        "name": "MakFly"
+      },
+      "homepage": "https://github.com/MakFly/superpowers-symfony",
+      "repository": "https://github.com/MakFly/superpowers-symfony",
+      "license": "MIT",
+      "keywords": [
+        "symfony",
+        "php",
+        "docker",
+        "tdd",
+        "doctrine",
+        "api-platform",
+        "messenger",
+        "architecture"
+      ],
+      "category": "frameworks",
+      "tags": [
+        "symfony",
+        "php",
+        "backend",
+        "tdd",
+        "doctrine",
+        "api-platform"
+      ]
     }
   ]
 }
