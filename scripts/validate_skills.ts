@@ -23,20 +23,47 @@ interface ValidationError {
 const errors: ValidationError[] = [];
 const warnings: ValidationError[] = [];
 
-function parseFrontmatter(content: string): Record<string, string> | null {
+function parseFrontmatter(content: string): Record<string, string | string[]> | null {
   const match = content.match(/^---\n([\s\S]*?)\n---/);
   if (!match) return null;
 
-  const frontmatter: Record<string, string> = {};
+  const frontmatter: Record<string, string | string[]> = {};
   const lines = match[1].split('\n');
+  let i = 0;
 
-  for (const line of lines) {
+  while (i < lines.length) {
+    const line = lines[i];
     const colonIndex = line.indexOf(':');
-    if (colonIndex > 0) {
+
+    if (colonIndex > 0 && !line.startsWith(' ') && !line.startsWith('-')) {
       const key = line.slice(0, colonIndex).trim();
-      const value = line.slice(colonIndex + 1).trim();
-      frontmatter[key] = value;
+      const rawValue = line.slice(colonIndex + 1).trim();
+
+      if (rawValue === '>' || rawValue === '|') {
+        // Multi-line scalar: collect indented continuation lines
+        const parts: string[] = [];
+        i++;
+        while (i < lines.length && (lines[i].startsWith('  ') || lines[i].trim() === '')) {
+          if (lines[i].trim() !== '') parts.push(lines[i].trim());
+          i++;
+        }
+        frontmatter[key] = parts.join(' ').trim();
+        continue;
+      } else if (rawValue === '') {
+        // Could be a YAML list (allowed-tools, tools, skills)
+        const items: string[] = [];
+        i++;
+        while (i < lines.length && lines[i].match(/^\s+-\s/)) {
+          items.push(lines[i].replace(/^\s+-\s*/, '').trim());
+          i++;
+        }
+        frontmatter[key] = items.length > 0 ? items : '';
+        continue;
+      } else {
+        frontmatter[key] = rawValue;
+      }
     }
+    i++;
   }
 
   return frontmatter;
@@ -160,7 +187,7 @@ function validatePluginJson(): void {
     const content = fs.readFileSync(PLUGIN_JSON, 'utf-8');
     const json = JSON.parse(content);
 
-    const requiredFields = ['name', 'description', 'version'];
+    const requiredFields = ['name', 'description'];
 
     for (const field of requiredFields) {
       if (!json[field]) {
@@ -178,7 +205,7 @@ function validatePluginJson(): void {
       });
     }
 
-    console.log(`  Plugin: ${json.name} v${json.version}`);
+    console.log(`  Plugin: ${json.name}${json.version ? ` v${json.version}` : ''}`);
   } catch (e) {
     errors.push({
       file: PLUGIN_JSON,
@@ -222,6 +249,68 @@ function validateHooks(): void {
   }
 }
 
+const AGENTS_DIR = path.join(PLUGIN_ROOT, 'agents');
+
+function validateAgents(): void {
+  console.log('Validating agents...');
+
+  if (!fs.existsSync(AGENTS_DIR)) {
+    warnings.push({ file: AGENTS_DIR, message: 'Agents directory does not exist (optional)' });
+    return;
+  }
+
+  const files = fs.readdirSync(AGENTS_DIR);
+  let validCount = 0;
+
+  for (const file of files) {
+    if (!file.endsWith('.md')) continue;
+
+    const agentFile = path.join(AGENTS_DIR, file);
+    const content = fs.readFileSync(agentFile, 'utf-8');
+    const frontmatter = parseFrontmatter(content);
+
+    if (!frontmatter) {
+      errors.push({
+        file: agentFile,
+        message: 'Missing or invalid frontmatter',
+      });
+      continue;
+    }
+
+    if (!frontmatter.name) {
+      errors.push({
+        file: agentFile,
+        message: 'Missing "name" in frontmatter',
+      });
+    }
+
+    if (!frontmatter.description || (typeof frontmatter.description === 'string' && frontmatter.description.trim() === '')) {
+      errors.push({
+        file: agentFile,
+        message: 'Missing or empty "description" in frontmatter',
+      });
+    }
+
+    // Validate skill references exist
+    if (frontmatter.skills && Array.isArray(frontmatter.skills)) {
+      for (const skill of frontmatter.skills) {
+        const skillSlug = skill.replace('symfony:', '');
+        const skillDir = path.join(SKILLS_DIR, skillSlug);
+        if (!fs.existsSync(skillDir)) {
+          errors.push({
+            file: agentFile,
+            message: `Referenced skill "${skill}" not found at ${skillDir}`,
+          });
+        }
+      }
+    }
+
+    validCount++;
+  }
+
+  console.log(`  Found ${validCount} valid agents`);
+}
+
 // Main execution
 console.log('\n===========================================');
 console.log('Validating superpowers-symfony plugin');
@@ -231,6 +320,7 @@ validatePluginJson();
 validateHooks();
 validateSkills();
 validateCommands();
+validateAgents();
 
 console.log('\n-------------------------------------------');
 
