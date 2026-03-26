@@ -11,7 +11,10 @@
   "plugins": [
     {
       "name": "superpowers-symfony",
-      "source": "./",
+      "source": {
+        "source": "github",
+        "repo": "MakFly/superpowers-symfony"
+      },
       "description": "Symfony-focused toolkit for Claude Code: TDD (Pest/PHPUnit), Doctrine ORM, API Platform, Messenger, Voters, quality checks, architecture patterns, and specialized subagents",
       "version": "1.0.0",
       "author": {
