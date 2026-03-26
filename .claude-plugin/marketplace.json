@@ -6,14 +6,14 @@
   },
   "metadata": {
     "description": "A Claude Code plugin providing Symfony-specific guidance, skills, and workflows for TDD, Doctrine, API Platform, Messenger, and more.",
-    "version": "0.1.0"
+    "version": "1.0.0"
   },
   "plugins": [
     {
       "name": "superpowers-symfony",
       "source": "./",
-      "description": "Symfony-focused toolkit for Claude Code: TDD (Pest/PHPUnit), Doctrine ORM, API Platform, Messenger, Voters, quality checks, and architecture patterns",
-      "version": "0.1.0",
+      "description": "Symfony-focused toolkit for Claude Code: TDD (Pest/PHPUnit), Doctrine ORM, API Platform, Messenger, Voters, quality checks, architecture patterns, and specialized subagents",
+      "version": "1.0.0",
       "author": {
         "name": "MakFly"
       },

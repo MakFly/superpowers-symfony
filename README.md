@@ -1,9 +1,10 @@
 # Superpowers Symfony
 
-A Claude Code plugin providing Symfony-specific guidance, skills, and workflows. Enhances your development experience with TDD support, Doctrine guidance, API Platform patterns, and best practices for Symfony 6.4 LTS, 7.x, and 8.0.
+A Claude Code plugin providing Symfony-specific guidance, skills, workflows, and specialized subagents. Enhances your development experience with TDD support, Doctrine guidance, API Platform patterns, and best practices for Symfony 6.4 LTS, 7.x, and 8.0.
 
 ## Features
 
+- **Specialized Agents** - 4 subagents with skill preloading and project memory
 - **TDD Workflows** - RED-GREEN-REFACTOR with Pest PHP or PHPUnit
 - **Doctrine Mastery** - Relations, migrations, transactions, Foundry fixtures
 - **API Platform** - Resources, filters, serialization, versioning, DTOs
@@ -181,6 +182,26 @@ Once installed, skills and commands are available automatically. Claude can invo
 | `/symfony-messenger` | Setup async messaging |
 | `/symfony-cache` | Configure caching |
 
+## Agents
+
+Specialized subagents that Claude auto-delegates to based on task context. Each agent has skill preloading and project-scoped memory that persists across sessions.
+
+| Agent | Description | Model | Mode |
+|-------|-------------|-------|------|
+| `symfony-reviewer` | Code review for Symfony quality, architecture, and best practices | Sonnet | Read-only |
+| `symfony-tdd-coach` | TDD workflow with strict RED-GREEN-REFACTOR cycles | Inherit | Read/Write |
+| `doctrine-architect` | Entity design, relationship modeling, and migration planning | Inherit | Read-only (proposes) |
+| `api-platform-builder` | API resource scaffolding with DTOs, providers, and security | Inherit | Read/Write |
+
+Claude invokes agents automatically based on your task. You can also reference them explicitly:
+
+```
+@agent-symfony-reviewer look at my recent changes
+@agent-symfony-tdd-coach help me write tests for UserService
+@agent-doctrine-architect design entities for an e-commerce app
+@agent-api-platform-builder create a Product API resource
+```
+
 ## Supported Versions
 
 | Framework | Version | Status |
@@ -211,6 +232,11 @@ superpowers-symfony/
 ├── .claude-plugin/
 │   ├── marketplace.json      # Marketplace catalog
 │   └── plugin.json           # Plugin manifest
+├── agents/                   # 4 specialized subagents
+│   ├── symfony-reviewer.md
+│   ├── symfony-tdd-coach.md
+│   ├── doctrine-architect.md
+│   └── api-platform-builder.md
 ├── skills/                   # 43 skill definitions
 │   ├── tdd-with-pest/
 │   │   └── SKILL.md
