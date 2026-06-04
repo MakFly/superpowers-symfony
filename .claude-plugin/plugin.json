@@ -1,12 +1,13 @@
 {
   "name": "superpowers-symfony",
-  "description": "A Symfony-focused toolkit for Claude Code providing TDD (Pest/PHPUnit), Doctrine ORM, API Platform, Messenger, Voters, quality checks (PHP-CS-Fixer/PHPStan), and pragmatic architecture patterns - Docker Compose and Symfony Docker (FrankenPHP) compatible",
+  "version": "1.0.0",
+  "description": "A Symfony-focused toolkit for Claude Code providing TDD, Doctrine ORM, API Platform, Messenger, Voters, quality checks, and pragmatic architecture workflows.",
   "author": {
-    "name": "MakFly"
+    "name": "koreanbbque"
   },
   "license": "MIT",
-  "homepage": "https://github.com/MakFly/superpowers-symfony",
-  "repository": "https://github.com/MakFly/superpowers-symfony.git",
+  "homepage": "https://github.com/koreanbbque/superpowers-symfony",
+  "repository": "https://github.com/koreanbbque/superpowers-symfony.git",
   "keywords": [
     "symfony",
     "php",

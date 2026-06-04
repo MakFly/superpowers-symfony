@@ -1,0 +1,45 @@
+{
+  "name": "superpowers-symfony",
+  "version": "1.0.0+codex.20260604102637",
+  "description": "A Symfony-focused Codex plugin providing TDD, Doctrine ORM, API Platform, Messenger, Voters, quality checks, and pragmatic architecture workflows.",
+  "author": {
+    "name": "koreanbbque"
+  },
+  "homepage": "https://github.com/koreanbbque/superpowers-symfony",
+  "repository": "https://github.com/koreanbbque/superpowers-symfony.git",
+  "license": "MIT",
+  "keywords": [
+    "symfony",
+    "php",
+    "docker",
+    "frankenphp",
+    "skills",
+    "tdd",
+    "doctrine",
+    "api-platform",
+    "messenger",
+    "architecture",
+    "workflows",
+    "quality",
+    "pest",
+    "phpunit",
+    "codex"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Superpowers Symfony",
+    "shortDescription": "Symfony workflows for TDD, Doctrine, API Platform, Messenger, and quality checks.",
+    "longDescription": "Superpowers Symfony is a local Codex plugin for Symfony developers. It packages pragmatic guidance for TDD, Doctrine ORM, API Platform, Messenger, Voters, testing, and code quality workflows.",
+    "developerName": "koreanbbque",
+    "category": "Developer Tools",
+    "capabilities": [
+      "Write",
+      "Interactive"
+    ],
+    "defaultPrompt": [
+      "Help me build a Symfony feature with TDD.",
+      "Review this Doctrine code for correctness.",
+      "Suggest the right Symfony or API Platform workflow."
+    ]
+  }
+}
